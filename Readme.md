@@ -1,11 +1,12 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Карачев](https://up.htmlacademy.ru/adaptive/13/user/198655).
-* Наставник: `Неизвестно`.
+* Наставник: Отсутствует.
 
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+
 
 Полезный файл:
 
