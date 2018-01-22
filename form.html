@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Проект "Мишка". Каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a href="#" class="logo">
+            <img src="http://placehold.it/150x100" alt="mishka">
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Распродажа</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="form">
+        <div class="form-wrapper">
+          <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <h2 class="form__title form__title--type">Тип</h2>
+          <ul class="form__list form__list--type">
+            <li class="form__item form__item--acsesuars">
+              <input type="checkbox" name="acsesuars" checked>
+              <label for="subscribe-field">Аксесуар для интерьера</label>
+            </li>
+            <li class="form__item form__item--toy">
+              <input type="checkbox" name="toy">
+              <label for="subscribe-field">Детская игрушка</label>
+            </li>
+          </ul>
+          <h2 class="form__title form__title--color">Цвет</h2>
+          <ul class="form__list form__list--color">
+            <li class="form__item form__item--white">
+              <input type="checkbox" name="white" checked>
+              <label for="subscribe-field">Белый</label>
+            </li>
+            <li class="form__item form__item--gray">
+              <input type="checkbox" name="gray" checked>
+              <label for="subscribe-field">Серый</label>
+            </li>
+            <li class="form__item form__item--tiffani">
+              <input type="checkbox" name="tiffani">
+              <label for="subscribe-field">"Тиффани"</label>
+            </li>
+            <li class="form__item form__item--black">
+              <input type="checkbox" name="black">
+              <label for="subscribe-field">Черный</label>
+            </li>
+            <li class="form__item form__item--pink">
+              <input type="checkbox" name="pink">
+              <label for="subscribe-field">Розовый</label>
+            </li>
+            <li class="form__item form__item--orange">
+              <input type="checkbox" name="orange">
+              <label for="subscribe-field">Оранжевый</label>
+            </li>
+          </ul>
+          <h2 class="form__title form__title--name">фио</h2>
+          <ul class="form__list form__list--name">
+            <li class="form__item">
+              <a href="#" class="name__item name__item--first">Имя:</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="first" value="Введите ваше имя*">
+              </form>
+            </li>
+            <li class="form__item">
+              <a href="#" class="name__item name__item--surname">Фамилия:</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="surname" value="Укажите фамилию*">
+              </form>
+            </li>
+            <li class="form__item">
+              <a href="#" class="name__item name__item--second">Отчество:</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="second" value="Отчество, если желаете">
+              </form>
+            </li>
+          </ul>
+          <h2 class="form__title form__title--tel">тел</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="tel" value="+7 ХХХ ХХ ХХ*">
+          </form>
+          <h2 class="form__title form__title--email">e-mail</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="email" value="Ваш Email*">
+          </form>
+          <h2 class="form__title form__title--elso">доп</h2>
+          <textarea name="comment" id="comment-field" rows="10">Опишите все ваши пожелания к заказу</textarea>
+          <p class="form__desc">*Поля обязательны для заполнения</p>
+          <a class="form__button button" href="#">отправить заказ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <img class="social__img social__img--inst" src="http://placehold.it/150x100" alt="Мы в Инстаграме">
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <img class="social__img social__img--facebook" src="http://placehold.it/150x100" alt="Мы в Фейсбуке">
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+              <img class="social__img social__img--twitter" src="http://placehold.it/150x100" alt="Мы в Твиттере">
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="http://placehold.it/150x100" alt="Html Academy">
+          </a>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
