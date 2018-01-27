@@ -1,21 +1,22 @@
-caption {
+.caption {
   font-weight: bold;
   font-family: "OpenSans", sans-serif;
-}
-.caption__title {
-  background: url("../img/mobile/bg-cap.jpg") no-repeat center;
-  height: 283px;
+
+  &__title {
+    background: url("../img/mobile/bg-cap.jpg") no-repeat center;
+    height: 283px;
   }
 
-.caption__list {
-  font-size: 19px;
-  color: white;
-}
-
-.caption-text--furniture {
-  background: #63d1bb;
+  &__list {
+    font-size: 19px;
+    color: white;
   }
 
-.caption-text--toy {
-  background: #56c3b2;
+  &--furniture {
+    background: #63d1bb;
+  }
+
+  &--toy {
+    background: #56c3b2;
+  }
 }
