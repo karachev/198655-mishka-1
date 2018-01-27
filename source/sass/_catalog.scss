@@ -1,12 +1,12 @@
-.catalog {
+.catalog-item {
   &__title {
     font-size: 27px;
     background: #f1f1f1;
-    color: black;
   }
 
   &__name {
     font-size: 17px;
+    font-weight: bold;
   }
 
   &__text {
@@ -16,6 +16,7 @@
 
   &__price {
     font-size: 15px;
+    font-weight: bold;
   }
 
 }
