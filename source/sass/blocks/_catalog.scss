@@ -1,8 +1,4 @@
 .catalog-item {
-  &__title {
-    font-size: 27px;
-    background: $gray;
-  }
 
   &__name {
     font-size: 17px;
@@ -19,4 +15,12 @@
     font-weight: bold;
   }
 
+}
+
+.catalog {
+  &__title {
+    font-size: 27px;
+    font-weight: bold;
+    background: $gray;
+  }
 }
