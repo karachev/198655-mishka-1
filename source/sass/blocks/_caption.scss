@@ -2,20 +2,20 @@
   font-weight: bold;
 
   &__title {
-    background: url("../img/mobile/bg-cap.jpg") no-repeat center;
+    background: $bg-toy;
     height: 283px;
   }
 
   &__list {
     font-size: 19px;
-    color: white;
+    color: $white;
   }
 
   &--furniture {
-    background: #63d1bb;
+    background: $lite-green;
   }
 
   &--toy {
-    background: #56c3b2;
+    background: $dark-green;
   }
 }

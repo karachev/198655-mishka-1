@@ -1,7 +1,7 @@
 .catalog-item {
   &__title {
     font-size: 27px;
-    background: #f1f1f1;
+    background: $gray;
   }
 
   &__name {
@@ -11,7 +11,7 @@
 
   &__text {
     font-size: 13px;
-    color: #444444;
+    color: $text-color;
   }
 
   &__price {

@@ -1,9 +1,9 @@
 .contacts {
-  color: #444444;
+  color: $text-color;
   font-size: 15px;
 
   &__title {
-  color: #000;
+  color: $black;
   font-size: 18px;
   }
 }
