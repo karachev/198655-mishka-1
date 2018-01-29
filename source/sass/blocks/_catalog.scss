@@ -1,0 +1,24 @@
+.catalog-item {
+  &__name {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $text-color;
+  }
+
+  &__price {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.catalog {
+  &__title {
+    font-size: 27px;
+    font-weight: bold;
+    background: $gray;
+  }
+}

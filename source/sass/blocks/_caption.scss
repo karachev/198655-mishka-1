@@ -1,0 +1,21 @@
+.caption {
+  font-weight: bold;
+
+  &__title {
+    background: url("../img/mobile/bg-cap.jpg") no-repeat center;
+    height: 283px;
+  }
+
+  &__list {
+    font-size: 19px;
+    color: $white;
+  }
+
+  &--furniture {
+    background: $lite-green;
+  }
+
+  &--toy {
+    background: $dark-green;
+  }
+}
