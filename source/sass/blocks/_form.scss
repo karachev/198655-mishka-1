@@ -1,0 +1,32 @@
+.form {
+  &__title {
+    font-size: 27px;
+    font-weight: bold;
+    background: $gray;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $text-color;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: $text-color;
+  }
+}
+
+.order-form {
+
+  &__title {
+    font-size: 17px;
+    font-weight: bold;
+    color: $lite-green;
+  }
+
+  &__group {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+}

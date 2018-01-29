@@ -1,0 +1,11 @@
+.production {
+  &__title {
+    font-size: 17px;
+  }
+
+  &__lead {
+    font-size: 13px;
+    color: $text-color;
+  }
+
+}
