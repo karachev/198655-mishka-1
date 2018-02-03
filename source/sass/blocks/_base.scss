@@ -1,12 +1,20 @@
 body {
   font-family: $sans;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
 
   a {
     text-decoration: none;
-    color: $black;
   }
 
   li {
     list-style-type: none;
   }
+
+
+  img {
+  max-width: 100%;
+  height: auto;
 }
