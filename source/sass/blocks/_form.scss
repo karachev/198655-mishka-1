@@ -1,6 +1,7 @@
 .form {
   width: 320px;
   margin: 0 auto;
+
   &__title {
     font-size: 27px;
     font-weight: 700;
@@ -23,7 +24,7 @@
     margin: 0;
   }
 
-    &__wrapper {
+  &__wrapper {
     width: 260px;
     margin: 0 auto;
   }
@@ -58,15 +59,16 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-
 }
 
 @media (min-width: 768px) {
   .form {
     width: 768px;
+
     &__wrapper {
       width: 668px;
     }
+
     &__text {
       font-size: 17px;
       font-weight: 400;
@@ -85,21 +87,22 @@
   }
   .order-form {
     &__wrapper {
-    flex-direction: row;
-    flex-wrap: no-wrap;
-  }
+      flex-direction: row;
+      flex-wrap: no-wrap;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .form {
     width: 1250px;
+
     &__wrapper {
       width: 1050px;
     }
+
     &__text {
       padding-left: 110px;
-
     }
   }
 }

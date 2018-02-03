@@ -1,6 +1,4 @@
 .catalog-item {
-
-
   &__name {
     font-size: 17px;
     font-weight: bold;
@@ -15,7 +13,6 @@
     font-size: 15px;
     font-weight: bold;
   }
-
 }
 
 .catalog {
@@ -34,6 +31,7 @@
 .page-main {
   width: 320px;
   margin: 0 auto;
+
   &__title {
     font-size: 27px;
     font-weight: 700;
@@ -44,7 +42,6 @@
     margin: 0;
     background: $gray;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -57,6 +54,7 @@
       width: 668px;
     }
   }
+
   .catalog-item {
     display: flex;
     flex-direction: row;
@@ -93,5 +91,5 @@
   .catalog-item {
     flex-direction: column;
     flex-wrap: wrap;
-}
+  }
 }

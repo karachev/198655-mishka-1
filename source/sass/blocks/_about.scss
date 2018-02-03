@@ -30,25 +30,28 @@
 
 @media (min-width: 768px) {
   .about {
-      width: 768px;
-      flex-direction: row;
+    width: 768px;
+    flex-direction: row;
+
     &__wrapper {
       width: 668px;
     }
+
     &__item {
       width: 50%;
       margin-top: 57px;
       margin: 0;
       margin-right:0;
     }
+
     &__title {
       margin-top: 59px;
     }
+
     &__list {
       display: flex;
       flex-wrap: wrap;
     }
-
   }
 }
 @media (min-width: 1250px) {
@@ -57,13 +60,14 @@
     &__wrapper {
       width: 1050px;
     }
+
     &__item {
       margin-top: 62px;
     }
+
     &__title {
       margin-top: 70px;
       margin-left: 175px;
     }
-
   }
 }

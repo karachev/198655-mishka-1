@@ -45,26 +45,32 @@
   .caption {
     background: url("../img/tablet/cap-tablet.jpg") no-repeat center;
     width: 768px;
+
     &__wrapper {
       width: 668px;
     }
+
     &__title {
       background: none;
       padding-top: 100px;
       padding-right: 87px;
       padding-bottom: 370px;
       padding-left: 87px;
-      }
+    }
+
     &__list {
       display: flex;
       flex-direction: row;
     }
+
     &__item {
       flex-grow: 2;
     }
+
     &--furniture {
       width: 50%;
     }
+
     &--toy {
       width: 50%;
     }
@@ -76,9 +82,11 @@
   .caption {
     background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
     width: 1250px;
+
     &__wrapper {
       width: 1050px;
     }
+
     &__title {
       padding-right: 220px;
       padding-bottom: 350px;

@@ -14,9 +14,6 @@
     margin-top: 44px;
   }
 
-  &__info {
-  }
-
   &__value {
     width: 33.3334%;
   }
@@ -48,34 +45,32 @@
 @media (min-width: 768px) {
   .contacts {
     width: 768px;
+
     &__wrapper {
       width: 668px;
-    }
-    &__table {
-    }
-    &__info {
     }
   }
 }
 
 @media (min-width: 1250px){
-.contacts {
-    min-height:830px;
-    //убрать min-heigh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  .contacts {
+    min-height:830px; //убрать min-heigh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     margin-top: 50px;
     width: 1050px;
     display: flex;
     flex-direction: column;
     position: relative;
+
     &__map {
       position: absolute;
       top: 0px;
       right: 0px;
       width: 50%;
     }
+
     &__wrapper {
       width: 50%;
       margin: 0;
     }
-}
+  }
 }

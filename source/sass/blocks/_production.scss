@@ -16,7 +16,8 @@
 
 @media (min-width: 768px) {
   .production  {
-      width: 768px;
+    width: 768px;
+
     &__wrapper {
       width: 668px;
     }
@@ -26,6 +27,7 @@
 @media (min-width: 1250px) {
   .production  {
     width: 1250px;
+
     &__wrapper {
       width: 1050px;
       display: flex;

@@ -1,6 +1,7 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
+
   &__title {
     font-size: 25px;
     font-weight: 700;
@@ -63,6 +64,7 @@
     position: relative;
     width: 768px;
     background: url("../img/tablet/bg-reviews-tablet.jpg") no-repeat left;
+
     &__wrapper {
       width: 668px;
     }
@@ -112,11 +114,13 @@
   .reviews {
     width: 1250px;
     background: none;
+
     &__wrapper {
       width: 1050px;
       padding-top: 80px;
       background: url("../img/tablet/bg-reviews-tablet.jpg") no-repeat left;
     }
+
     &__title {
       font-size: 53px;
       font-weight: 700;
@@ -134,8 +138,8 @@
       margin-bottom: 102px;
       padding-left: 174px;
       width: 25%
-
     }
+
     &__btns {
       margin-top: 59px;
     }
