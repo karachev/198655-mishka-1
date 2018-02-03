@@ -1,12 +1,33 @@
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("fonts/opensans.woff2") format("woff2"), url("fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
+}
+
 body {
   font-family: $sans;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
 
-  a {
-    text-decoration: none;
-    color: $black;
-  }
+a {
+  text-decoration: none;
+}
 
-  li {
-    list-style-type: none;
-  }
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

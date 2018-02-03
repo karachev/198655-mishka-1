@@ -1,18 +1,42 @@
 .form {
+  width: 320px;
+  margin: 0 auto;
+
   &__title {
     font-size: 27px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 76px;
+    padding-bottom: 74px;
+    margin: 0;
     background: $gray;
   }
 
   &__text {
     font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
     color: $text-color;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-right: 20px;
+    margin: 0;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__desc {
     font-size: 14px;
     color: $text-color;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -21,10 +45,65 @@
     font-size: 17px;
     font-weight: bold;
     color: $lite-green;
+    margin: 0;
+    padding: 0;
   }
 
   &__group {
     font-size: 17px;
     font-weight: bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 768px;
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__text {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__fb {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+    }
+
+    &__desc {
+      order: 3;
+    }
+  }
+
+  .order-form {
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: no-wrap;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .form {
+    width: 1250px;
+
+    &__wrapper {
+      width: 1050px;
+    }
+
+    &__text {
+      padding-left: 110px;
+    }
   }
 }
