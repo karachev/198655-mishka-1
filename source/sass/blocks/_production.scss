@@ -7,4 +7,40 @@
     font-size: 13px;
     color: $text-color;
   }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .production {
+    width: 768px;
+
+    &__wrapper {
+      width: 668px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .production {
+    width: 1250px;
+
+    &__wrapper {
+      width: 1050px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+    }
+
+    &__player {
+      width: 50%;
+    }
+
+    &__info {
+      width: 50%;
+    }
+  }
 }

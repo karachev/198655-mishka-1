@@ -1,14 +1,28 @@
 .caption {
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 
   &__title {
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 115px;
+    padding-left: 50px;
+    line-height: 30px;
     background: url("../img/mobile/bg-cap.jpg") no-repeat center;
-    height: 283px;
+    text-align: center;
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
     font-size: 19px;
+    margin: 0;
+    padding: 0;
     color: $white;
+    list-style: none;
   }
 
   &--furniture {
@@ -17,5 +31,64 @@
 
   &--toy {
     background: $dark-green;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .caption {
+    background: url("../img/tablet/cap-tablet.jpg") no-repeat center;
+    width: 768px;
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__title {
+      background: none;
+      padding-top: 100px;
+      padding-right: 87px;
+      padding-bottom: 370px;
+      padding-left: 87px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      flex-grow: 2;
+    }
+
+    &--furniture {
+      width: 50%;
+    }
+
+    &--toy {
+      width: 50%;
+    }
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .caption {
+    background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
+    width: 1250px;
+
+    &__wrapper {
+      width: 1050px;
+    }
+
+    &__title {
+      padding-right: 220px;
+      padding-bottom: 350px;
+      padding-left: 220px;
+    }
   }
 }

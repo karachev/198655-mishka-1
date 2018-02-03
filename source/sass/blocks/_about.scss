@@ -1,8 +1,73 @@
 .about {
   font-size: 17px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &__title {
     font-size: 25px;
+    margin-top: 34px;
+    margin-left: 30px;
+  }
+
+  &__item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    width: 768px;
+    flex-direction: row;
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__item {
+      width: 50%;
+      margin: 0;
+    }
+
+    &__title {
+      margin-top: 59px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .about {
+    width: 1250px;
+
+    &__wrapper {
+      width: 1050px;
+    }
+
+    &__item {
+      margin-top: 62px;
+    }
+
+    &__title {
+      margin-top: 70px;
+      margin-left: 175px;
+    }
   }
 }

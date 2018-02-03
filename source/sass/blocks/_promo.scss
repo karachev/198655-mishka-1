@@ -1,17 +1,139 @@
 .promo {
   font-size: 15px;
+  width: 320px;
+  margin: 0 auto;
 
   &__title {
     font-size: 25px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
   }
 
   &__type {
     font-size: 17px;
+    line-height: 20px;
     color: $lite-green;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: $text-color;
+    padding-right: 11px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  &__table {
+    color: $text-color;
+    height: 123px;
+  }
+
+  &__image {
+    margin-top: 29px;
+    margin-bottom: 29px;
   }
 
   &__footer {
     font-size: 17px;
     font-weight: bold;
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo {
+    width: 768px;
+
+    &__wrapper {
+      width: 668px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: relative;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    &__footer {
+      position: relative;
+      width: 40%;
+    }
+
+    &__type {
+      padding: 0;
+    }
+
+    &__info {
+      width: 50%;
+      padding: 0;
+    }
+
+    &__image {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 150px;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__comment {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .promo {
+    width: 1250px;
+
+    &__wrapper {
+      padding-left: 320px;
+      width: 730px;
+      flex-direction: column;
+    }
+
+    &__header {
+      position: relative;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 57px;
+    }
+
+    &__type {
+      left: -150px;
+      order: -1;
+      position: absolute;
+      width: 10%;
+      text-align: center;
+    }
+
+    &__image {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+    }
+
+    &__text {
+      width: 46%;
+    }
   }
 }

@@ -1,9 +1,76 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   color: $text-color;
   font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
 
   &__title {
     color: $black;
     font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 44px;
+  }
+
+  &__value {
+    width: 33.3334%;
+  }
+
+  &__field {
+    width: 66.6668%;
+  }
+
+  &__table {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__send-us {
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 768px;
+
+    &__wrapper {
+      width: 668px;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts {
+    min-height: 830px; //убрать min-heigh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    margin-top: 50px;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__map {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+    }
+
+    &__wrapper {
+      width: 50%;
+      margin: 0;
+    }
   }
 }
