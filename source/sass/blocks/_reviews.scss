@@ -1,23 +1,28 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
+  line-height: 30px;
+  font-size: 17px;
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: 700;
-    line-height: 30px;
     margin: 0;
-    margin-top: 61px;
     margin-bottom: 38px;
   }
 
   &__text {
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
     color: $text-color;
     margin: 0;
     margin-bottom: 40px;
+    margin-right: 12px;
   }
 
   &__author-name {
@@ -35,11 +40,6 @@
     margin-bottom: 36px;
   }
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-  }
-
   &__item {
     margin: 0;
   }
@@ -51,12 +51,39 @@
 
   &__btn {
     width: 50%;
+    margin-bottom: 38px;
+    padding: 10px 0px;
+    border: 1px solid $slider-color;
+    text-align: center;
+    border-collapse: collapse;
   }
 
   &__write {
     width: 100%;
-    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 14px 0px;
+    border: 2px solid $text-color;
+    cursor: pointer;
+    text-align: center;
   }
+
+  &__prev {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+  }
+
+  &__next {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -73,8 +100,8 @@
       font-size: 43px;
       font-weight: 700;
       line-height: 50px;
-      padding-top: 86px;
-      padding-bottom: 65px;
+      padding: 0;
+      padding-top: 100px;
       margin: 0;
     }
 
@@ -90,6 +117,8 @@
       line-height: 30px;
       font-weight: 400;
       margin: 0;
+      padding-top: 65px;
+      padding-bottom: 68px;
     }
 
     &__author {
@@ -98,14 +127,15 @@
       margin-bottom: 53px;
     }
 
-    &__btns {
-      width: 50%;
-      margin-top: 78px;
-    }
-
     &__write {
       position: absolute;
-      top: 135px;
+      right: 0;
+      width: 200px;
+      top: 100px;
+    }
+
+    &__btn {
+      border: none;
     }
   }
 }
