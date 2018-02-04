@@ -37,3 +37,7 @@ img {
   color: $text-color;
   text-decoration: none;
 }
+
+.visually-hidden {
+  @extend %visuallyhidden;
+}
