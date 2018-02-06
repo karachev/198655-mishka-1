@@ -1,11 +1,14 @@
+.page-header {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .main-nav {
   width: 320px;
   margin: 0 auto;
-
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-  }
+  position: relative;
+  min-height: 79px;
 
   &__list {
     margin: 0;
@@ -15,20 +18,153 @@
     text-align: center;
   }
 
+  &__item {
+    border-bottom: 1px solid $slider-color;
+  }
+
   &__toggle {
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 21px;
+    height: 20px;
+    background-color: $white;
+    cursor: pointer;
+    border: none;
   }
 
   &__item-none {
     display: none;
   }
 
-  &__item {
-    padding-top: 30px;
+  &__item-logo {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  &__item-knit {
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+
+  &__item-catalog {
+    padding-top: 32px;
     padding-bottom: 30px;
   }
+
+  &__item-search {
+    padding-top: 31px;
+    padding-bottom: 30px;
+  }
+
+  &__item-basket {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    border: none;
+  }
 }
+
+.main-nav-closed .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -31px;
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black, 0 24px 0 0 $black;
+    }
+}
+
+.main-nav-opened .main-nav__toggle {
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 29px;
+      left: 30px;
+      width: 21px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    //? скорее всего нужно переставить
+    &__item-logo {
+    border: none;
+  }
+
+    &__item-knit {
+    display: none;
+    }
+
+    &__item-catalog {
+      display: none;
+    }
+
+    &__item-search {
+      display: none;
+    }
+
+    &__item-basket {
+      display: none;
+    }
+  }
+
+  .main-nav-nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav-nojs .main-nav__list {
+    display: block;
+  }
+
+   .main-nav-opened .main-nav__item-catalog,
+   .main-nav-opened .main-nav__item-knit,
+   .main-nav-opened .main-nav__item-search,
+   .main-nav-opened .main-nav__item-basket {
+    display: block;
+  }
+
+   .main-nav-opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 400px;
+  }
+
+  .main-nav-opened .main-nav__wrapper::before {
+    content: "";
+//&&&&
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: 2;
+
+    width: 7px;
+    height: 100%;
+  }
+
+
+}
+
 
 @media (min-width: 768px) {
   .main-nav {
