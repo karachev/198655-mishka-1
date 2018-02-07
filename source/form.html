@@ -9,34 +9,36 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item-logo">
+            <li class="main-nav__item main-nav__item--logo">
               <a href="./" class="logo">
               <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
               </a>
             </li>
-            <li class="main-nav__item main-nav__item-catalog">
+            <li class="main-nav__item main-nav__item--catalog">
               <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item-knit">
+            <li class="main-nav__item main-nav__item--knit">
               <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item-search">
-              <a href="catalog.html" class="main-nav__link">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <img src="http://placehold.it/150x100" alt="Поиск по сайту" height="18px" width="19px">
+              <a href="catalog.html" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item-basket">
+            <li class="main-nav__item main-nav__item--basket">
+            <img src="http://placehold.it/150x100" alt="Корзина" height="21px" width="18px">
               <a href="./" class="main-nav__link">Корзина:пока пуста</a>
             </li>
-            <li class="main-nav__item main-nav__item-free main-nav__item-none">
+            <li class="main-nav__item main-nav__item--free main-nav__item--none">
               <a href="./" class="main-nav__link">Бесплатная доставка по россии</a>
             </li>
-            <li class="main-nav__item main-nav__item-none main-nav__item-new">
+            <li class="main-nav__item main-nav__item--none main-nav__item--new">
               <a href="./" class="main-nav__link">Новые поступления</a>
             </li>
-            <li class="main-nav__item main-nav__item-none main-nav__item-sale">
+            <li class="main-nav__item main-nav__item--none main-nav__item--sale">
               <a href="./" class="main-nav__link">Распродажа</a>
             </li>
           </ul>
@@ -137,7 +139,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+   <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="./" class="logo">
@@ -169,5 +171,21 @@
       </div>
       </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
   </body>
 </html>
