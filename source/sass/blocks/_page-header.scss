@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: $black;
     background-color: $white;
   }
 
@@ -48,22 +49,50 @@
   &__item--knit {
     padding-top: 32px;
     padding-bottom: 33px;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__item--catalog {
     padding-top: 32px;
     padding-bottom: 30px;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__item--search {
     padding-top: 31px;
     padding-bottom: 30px;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__item--basket {
     padding-top: 32px;
     padding-bottom: 30px;
     border: none;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -237,6 +266,13 @@
       text-align: start;
       padding-top: 25px;
       padding-left: 31px;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &__link--search {
@@ -308,6 +344,13 @@
       display: block;
       text-align: start;
       padding-top: 25px;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &__item--sale {
@@ -318,6 +361,13 @@
       padding-left: 35px;
       text-align: start;
       margin-right: auto;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

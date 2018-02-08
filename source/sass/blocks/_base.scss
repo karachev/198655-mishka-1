@@ -36,6 +36,18 @@ img {
 .button {
   color: $text-color;
   text-decoration: none;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+      color: $white;
+      background-color: $text-color;
+    }
+
+  &:active {
+    opacity: 0.3;
+    color: $white;
+    background-color: $text-color;
+  }
 }
 
 .visually-hidden {

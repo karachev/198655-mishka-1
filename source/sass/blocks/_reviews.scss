@@ -78,6 +78,13 @@
     padding: 0;
     border: none;
     background-color: white;
+    &:hover {
+      opacity: 0.6;;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__next {
@@ -85,6 +92,13 @@
     padding: 0;
     border: none;
     background-color: white;
+    &:hover {
+      opacity: 0.6;;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
 }

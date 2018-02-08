@@ -35,7 +35,6 @@
     font-size: 19px;
     font-weight: 700;
     line-height: 24px;
-    color: $white;
     list-style: none;
     width: 100%;
   }
@@ -50,18 +49,39 @@
 
   &--furniture {
     background: $lite-green;
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+    }
   }
 
    &__text--furniture {
-    padding-right: 109px;
+    color: $white;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--toy {
     background: $dark-green;
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 
   &__text--toy {
     padding-right: 115px;
+    color: $white;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__line {

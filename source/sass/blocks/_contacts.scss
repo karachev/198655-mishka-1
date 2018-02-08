@@ -43,6 +43,16 @@
   &__field--mail {
     width: 66.6668%;
     border-bottom: 1px solid $lite-green;
+
+    &:hover {
+      color: red;
+      border-bottom: 1px solid #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+      border-bottom: 1px solid #ecf9f7;
+    }
   }
 
   &__table {
@@ -161,9 +171,8 @@
       margin: 0;
       padding-left: 175px;
     }
-
-
   }
+
 
   .contacts__table tbody {
     display: block;
