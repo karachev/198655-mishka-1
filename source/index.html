@@ -30,7 +30,7 @@
               <a href="catalog.html" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-            <img src="http://placehold.it/150x100" alt="Корзина" height="21px" width="18px">
+              <img src="http://placehold.it/150x100" alt="Корзина" height="21px" width="18px">
               <a href="./" class="main-nav__link">Корзина:пока пуста</a>
             </li>
             <li class="main-nav__item main-nav__item--free main-nav__item--none">
@@ -48,25 +48,24 @@
     </header>
     <main class="page-main">
       <section class="caption">
-          <div class="caption__title">
-            <h1 class="caption__title--text">Милые штуки ручной </br>работы для дома</h1>
-            <div class="caption__wrapper">
-          <ul class="caption__list">
-            <li class="caption__item caption--furniture">
-              <a class="caption__text caption__text--furniture">Предметы </br>интерьера
-              </a>
-              <img src="http://placehold.it/150x100" width="40px" height="62px">
-            </li>
-            <li class="caption__item caption--toy">
-              <a class="caption__text caption__text--toy">
-              Детские </br>игрушки
-              </a>
-              <img src="http://placehold.it/150x100" width="60px" height="60px">
-            </li>
-          </ul>
-        </div>
+        <div class="caption__title">
+          <h1 class="caption__title--text">Милые штуки ручной </br>работы для дома</h1>
+          <div class="caption__wrapper">
+            <ul class="caption__list">
+              <li class="caption__item caption--furniture">
+                <a class="caption__text caption__text--furniture">Предметы </br>интерьера
+                </a>
+                <img src="http://placehold.it/150x100" width="40px" height="62px">
+              </li>
+              <li class="caption__item caption--toy">
+                <a class="caption__text caption__text--toy">
+                Детские </br>игрушки
+                </a>
+                <img src="http://placehold.it/150x100" width="60px" height="60px">
+              </li>
+            </ul>
           </div>
-
+        </div>
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -109,9 +108,9 @@
             <img src="img/mobile/promo-img-mobile.jpg" width="260px" height="315px">
           </div>
           <div class="promo__footer">
-              <p class="promo__text--price">Цена: 990руб.</p>
-              <a class="promo__btn button" href="./">заказать</a>
-            </div>
+            <p class="promo__text--price">Цена: 990руб.</p>
+            <a class="promo__btn button" href="./">заказать</a>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -121,37 +120,37 @@
             <li class="about__item about__item--eco">
               <img src="http://placehold.it/150x100" width="33px" height="38px">
               <div class="about__text--eco">
-              Экологически чистые материалы
+                Экологически чистые материалы
               </div>
             </li>
             <li class="about__item about__item--style">
               <img src="http://placehold.it/150x100" width="47px" height="27px">
               <div class="about__text--style">
-              Скандинавский стиль по российской цене
+                Скандинавский стиль по российской цене
               </div>
             </li>
             <li class="about__item about__item--like">
               <img src="http://placehold.it/150x100" width="34px" height="27px">
               <div class="about__text--like">
-              Увеличивает лайки на фотографиях
+                Увеличивает лайки на фотографиях
               </div>
             </li>
             <li class="about__item about__item--handmade">
               <img src="http://placehold.it/150x100" width="35px" height="34px">
               <div class="about__text--handmade">
-              Связано вручную с любовью и умилением
+                Связано вручную с любовью и умилением
               </div>
             </li>
             <li class="about__item about__item--support">
               <img src="http://placehold.it/150x100" width="33px" height="32px">
               <div class="about__text--support">
-              Поддержка отечественного производителя
+                Поддержка отечественного производителя
               </div>
             </li>
             <li class="about__item about__item--pack">
               <img src="http://placehold.it/150x100" width="32px" height="37px">
               <div class="about__text--pack">
-              Поставляется в подарочной упаковке
+                Поставляется в подарочной упаковке
               </div>
             </li>
           </ul>
@@ -214,7 +213,7 @@
         </div>
         <img class="contacts__map" src="img/mobile/map-mobile.jpg" width="322px" height="427px" alt="Карта">
         <div class="contacts__wrapper-btn">
-        <a class="contacts__send-us button" href="./">напишите нам</a>
+          <a class="contacts__send-us button" href="./">напишите нам</a>
         </div>
       </section>
     </main>
@@ -251,20 +250,20 @@
       </div>
     </footer>
     <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

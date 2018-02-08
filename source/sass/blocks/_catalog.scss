@@ -7,10 +7,27 @@
   &__description {
     margin-left: 29px;
     margin-right: 28px;
+    margin-top: 29px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__name {
     font-size: 17px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__text {
@@ -61,6 +78,7 @@
 @media (min-width: 768px) {
   .page-main {
     width: 768px;
+    margin-top: -82px;
 
     &__title {
       font-size: 43px;
@@ -73,7 +91,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1px;
         width: 100%;
         height: 24px;
         background-image: url("../img/tablet/line-tablet.png");
@@ -132,6 +150,7 @@
 @media (min-width: 1250px) {
   .page-main {
     width: 1250px;
+    margin-top: -49px;
 
     &__title {
       font-size: 53px;
@@ -142,7 +161,7 @@
 
       &::before {
         height: 34px;
-        background-image: url("../img/tablet/line-tablet.png");
+        background-image: url("../img/desktop/line-desktop.png");
     }
     }
   }

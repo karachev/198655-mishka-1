@@ -58,10 +58,10 @@
     }
   }
 
-   &__text--furniture {
+  &__text--furniture {
     color: $white;
     &:active {
-      opacity: 0.3;
+    opacity: 0.3;
     }
   }
 
@@ -91,6 +91,11 @@
 }
 
 @media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+    margin-top: -102px;
+  }
+
   .caption {
     background: url("../img/tablet/cap-tablet.jpg") no-repeat center;
     width: 768px;
@@ -153,6 +158,11 @@
 
 
 @media (min-width: 1250px) {
+  .page-main {
+    width: 1250px;
+    margin-top: -64px;
+  }
+
   .caption {
     background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
     width: 1250px;
