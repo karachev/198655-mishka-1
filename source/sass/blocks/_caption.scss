@@ -74,7 +74,17 @@
   .caption {
     background: url("../img/tablet/cap-tablet.jpg") no-repeat center;
     width: 768px;
-
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/tablet/line-tablet.png");
+      background-repeat: repeat-x;
+    }
 
     &__wrapper {
       width: 668px;
@@ -116,28 +126,20 @@
     &--toy {
       width: 50%;
     }
-
-  .caption__title {
-    position: relative;
-    &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 23px;
-    background-image: url("../img/tablet/line-tablet.png");
-    background-repeat: repeat-x;
-  }
-  }
   }
 }
+
 
 
 @media (min-width: 1250px) {
   .caption {
     background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
     width: 1250px;
+
+    &::before {
+      height: 34px;
+      background-image: url("../img/desktop/line-desktop.png");
+    }
 
     &__wrapper {
       width: 1050px;
