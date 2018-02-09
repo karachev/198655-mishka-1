@@ -271,7 +271,6 @@
   .form {
     width: 768px;
 
-
     &__wrapper {
       width: 668px;
     }
@@ -298,29 +297,61 @@
       margin: 0;
     }
 
-    &__wrapper--color{
-    padding: 0;
-    margin: 0;
-    width: 73%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    }
-
     &__text {
       font-size: 17px;
       font-weight: 400;
       line-height: 30px;
       padding-right: 35px;
+      padding-bottom: 81px;
     }
 
     &__fb {
       display: flex;
-      flex-direction: row;
       flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: flex-end;
+      justify-content: space-between;
     }
 
     &__desc {
       order: 3;
+      margin-bottom: 68px;
+      margin-right: 10px;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 73%;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+    }
+
+    &__item--pink,
+    &__item--orange {
+      margin-bottom: 0;
+    }
+
+    &__item--black,
+    &__item--tiffani
+    &__item--gray,
+    &__item--white {
+      margin-bottom: 56px;
+    }
+
+    &__item--acsesuars {
+      width: 55%;
+      margin-bottom: 57px;
+    }
+
+    &__item--toy {
+      width: 55%;
+      margin-bottom: 66px;
     }
   }
 
@@ -330,12 +361,64 @@
       flex-wrap: no-wrap;
     }
 
-    &__wrapper--type {
-      justify-content: space-between;
+    &__wrapper--color{
+      background-color: $gray;
+      padding-top: 66px;
+      padding-bottom: 70px;
     }
 
-    &__radio {
-      margin-right: 168px;
+    &__title {
+      width: 26%;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__set--name {
+      margin-top: 69px;
+      margin-bottom: 50px;
+    }
+
+    &__group--name,
+    &__group--tel,
+    &__group--mail,
+    &__group--else {
+      margin: 0;
+    }
+
+    &__item--name,
+    &__item--surname,
+    &__item--second-name {
+      display: flex;
+    }
+
+    &__set--mail {
+      margin-bottom: 50px;
+    }
+
+    &__group {
+      width: 73%;
+    }
+
+    &__input--tel,
+    &__input--mail {
+      background-color: $gray;
+    }
+
+    &__wrapper--tel {
+      background-color: $gray;
+      padding-bottom: 43px;
+      padding-top: 69px;
+    }
+
+    &__wrapper--mail {
+      background-color: $gray;
+      padding-bottom: 50px;
+    }
+
+    &__set--else {
+      margin-bottom: 53px;
     }
   }
 }
