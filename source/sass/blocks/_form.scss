@@ -294,6 +294,18 @@
       }
     }
 
+    &__list {
+      margin: 0;
+    }
+
+    &__wrapper--color{
+    padding: 0;
+    margin: 0;
+    width: 73%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    }
+
     &__text {
       font-size: 17px;
       font-weight: 400;
@@ -316,6 +328,14 @@
     &__wrapper {
       flex-direction: row;
       flex-wrap: no-wrap;
+    }
+
+    &__wrapper--type {
+      justify-content: space-between;
+    }
+
+    &__radio {
+      margin-right: 168px;
     }
   }
 }
