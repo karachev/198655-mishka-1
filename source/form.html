@@ -57,12 +57,12 @@
                 <h2 class="order-form__title">Тип</h2>
                 <ul class="form__list form__list--type">
                   <li class="form__item form__item--acsesuars">
-                    <input type="radio" name="radio-type" id="subscribe-field">
-                    <label for="subscribe-field">Аксесуар для интерьера</label>
+                    <input class="visually-hidden" type="radio" name="radio-type" id="subscribe-field">
+                    <label class="order-form__radio" for="subscribe-field">Аксесуар для интерьера</label>
                   </li>
                   <li class="form__item form__item--toy">
-                    <input type="radio" name="radio-type" id="subscribe-field">
-                    <label for="subscribe-field">Детская игрушка</label>
+                    <input class="visually-hidden" type="radio" name="radio-type" id="subscribe-field">
+                    <label class="order-form__radio" for="subscribe-field">Детская игрушка</label>
                   </li>
                 </ul>
               </div>
@@ -72,28 +72,28 @@
                 <h2 class="order-form__title">Цвет</h2>
                 <ul class="form__list form__list--color">
                   <li class="form__item form__item--white">
-                    <input type="checkbox" name="white" checked id="subscribe-field">
-                    <label for="subscribe-field">Белый</label>
+                    <input class="visually-hidden" type="checkbox" name="white" checked id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">Белый</label>
                   </li>
                   <li class="form__item form__item--gray">
-                    <input type="checkbox" name="gray" checked id="subscribe-field">
-                    <label for="subscribe-field">Серый</label>
+                    <input class="visually-hidden" type="checkbox" name="gray" checked id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">Серый</label>
                   </li>
                   <li class="form__item form__item--tiffani">
-                    <input type="checkbox" name="tiffani" id="subscribe-field">
-                    <label for="subscribe-field">"Тиффани"</label>
+                    <input class="visually-hidden" type="checkbox" name="tiffani" id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">"Тиффани"</label>
                   </li>
                   <li class="form__item form__item--black">
-                    <input type="checkbox" name="black" id="subscribe-field">
-                    <label for="subscribe-field">Черный</label>
+                    <input class="visually-hidden" type="checkbox" name="black" id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">Черный</label>
                   </li>
                   <li class="form__item form__item--pink">
-                    <input type="checkbox" name="pink" id="subscribe-field">
-                    <label for="subscribe-field">Розовый</label>
+                    <input class="visually-hidden" type="checkbox" name="pink" id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">Розовый</label>
                   </li>
                   <li class="form__item form__item--orange">
-                    <input type="checkbox" name="orange" id="subscribe-field">
-                    <label for="subscribe-field">Оранжевый</label>
+                    <input class="visually-hidden" type="checkbox" name="orange" id="subscribe-field">
+                    <label class="order-form__checkbox" for="subscribe-field">Оранжевый</label>
                   </li>
                 </ul>
               </div>
@@ -101,34 +101,43 @@
             <fieldset class="order-form__set order-form__set--name">
               <div class="order-form__wrapper">
                 <h2 class="order-form__title">ФИО</h2>
-                <div class="order-form__group">
-                  <label>Имя:<input type="text" name="name" placeholder="Введите ваше имя*"></label>
-                  <label>Фамилия:<input type="text" name="surname" placeholder="Укажите фамилию*"></label>
-                  <label>Отчество:<input type="text" name="second name" placeholder="Отчество, если желаете"></label>
-                </div>
+                <ul class="order-form__group order-form__group--name">
+                  <li class="order-form__item order-form__item--name">
+                  <label class="order-form__name">Имя:
+                  <input class="order-form__input" type="text" name="name" placeholder="Введите ваше имя*"></label>
+                  </li>
+                  <li class="order-form__item order-form__item--surname">
+                  <label class="order-form__surname">Фамилия:
+                  <input class="order-form__input" type="text" name="surname" placeholder="Укажите фамилию*"></label>
+                  </li>
+                  <li class="order-form__item order-form__item--second-name">
+                  <label class="order-form__second-name">Отчество:
+                  <input class="order-form__input" type="text" name="second-name" placeholder="Отчество, если желаете"></label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <fieldset class="order-form__set order-form__set--tel">
               <div class="order-form__wrapper">
                 <h2 class="order-form__title">ТЕЛ</h2>
-                <div class="order-form__group">
-                  <input type="text" name="tel" placeholder="+7 ХХХ ХХ ХХ**">
+                <div class="order-form__group order-form__group--tel">
+                  <input class="order-form__input" type="text" name="tel" placeholder="+7 ХХХ ХХ ХХ**">
                 </div>
               </div>
             </fieldset>
             <fieldset class="order-form__set order-form__set--mail">
               <div class="order-form__wrapper">
                 <h2 class="order-form__title">E-MAIL</h2>
-                <div class="order-form__group">
-                  <input type="text" name="mail" placeholder="Ваш Email*">
+                <div class="order-form__group order-form__group--mail">
+                  <input class="order-form__input" type="text" name="mail" placeholder="Ваш Email*">
                 </div>
               </div>
             </fieldset>
             <fieldset class="order-form__set order-form__set--else">
               <div class="order-form__wrapper">
                 <h2 class="order-form__title">ДОП</h2>
-                <div class="order-form__group">
-                  <textarea type="text" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <div class="order-form__group order-form__group--else">
+                  <textarea class="order-form__textarea" type="text" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </fieldset>
