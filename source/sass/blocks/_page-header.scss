@@ -193,6 +193,10 @@
     z-index: 1;
   }
 
+  .page-main--index {
+    margin-top: -102px;
+  }
+
   .main-nav {
     width: 768px;
     z-index: 2;
@@ -274,6 +278,10 @@
       }
     }
 
+    &__link--free {
+      margin: 0;
+    }
+
     &__link--search {
       display: none;
     }
@@ -281,6 +289,10 @@
 }
 
 @media (min-width: 1250px) {
+
+  .page-main--index {
+    margin-top: -64px;
+  }
 
   .main-nav {
     width: 1250px;

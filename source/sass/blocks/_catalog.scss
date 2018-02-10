@@ -5,9 +5,9 @@
   line-height: 24px;
 
   &__description {
-    margin-left: 29px;
-    margin-right: 28px;
-    margin-top: 29px;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 29px;
 
     &:hover {
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -118,8 +118,8 @@
 
     &__description {
       width: 50%;
-      margin-right: 33px;
-      margin-top: 29px;
+      padding-right: 33px;
+      padding-top: 29px;
     }
 
     &__name {
@@ -184,10 +184,10 @@
 
   .catalog-item {
     &__description {
-      margin-top: 29px;
-      margin-bottom: 29px;
-      margin-left: 28px;
-      margin-right: 0;
+      padding-top: 29px;
+      padding-bottom: 29px;
+      padding-left: 28px;
+      padding-right: 0;
     }
 
     &__text {

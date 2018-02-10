@@ -90,10 +90,11 @@
 
 }
 
+
 @media (min-width: 768px) {
+
   .page-main {
     width: 768px;
-    margin-top: -102px;
   }
 
   .caption {
@@ -159,8 +160,7 @@
 
 @media (min-width: 1250px) {
   .page-main {
-    width: 1250px;
-    margin-top: -64px;
+    width: 0;
   }
 
   .caption {
