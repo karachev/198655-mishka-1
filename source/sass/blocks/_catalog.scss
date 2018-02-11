@@ -4,18 +4,18 @@
   font-weight: 700;
   line-height: 24px;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   &__description {
     padding-left: 29px;
     padding-right: 28px;
     padding-top: 29px;
-
-    &:hover {
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    &:active {
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    }
   }
 
   &__name {
@@ -76,6 +76,10 @@
 }
 
 @media (min-width: 768px) {
+  .page-main--catalog {
+    margin-top: -82px;
+  }
+
   .page-main {
     width: 768px;
     margin-top: -82px;
@@ -148,9 +152,12 @@
 }
 
 @media (min-width: 1250px) {
+  .page-main--catalog {
+    margin-top: -49px;
+  }
+
   .page-main {
     width: 1250px;
-    margin-top: -49px;
 
     &__title {
       font-size: 53px;
@@ -185,19 +192,22 @@
   .catalog-item {
     &__description {
       padding-top: 29px;
-      padding-bottom: 29px;
       padding-left: 28px;
       padding-right: 0;
+      width: 83%;
     }
 
     &__text {
       padding-bottom: 45px;
     }
 
+    &__text--bigbas {
+      padding-bottom: 19px;
+    }
+
     &__footer {
       padding-top: 23px;
       padding-bottom: 32px;
     }
-
   }
 }

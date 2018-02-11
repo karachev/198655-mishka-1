@@ -25,11 +25,6 @@
     margin: 0;
   }
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-  }
-
   &__desc {
     font-size: 14px;
     color: $text-color;
@@ -50,7 +45,7 @@
   &__list--type {
     margin-top: 43px;
     margin-bottom: 45px;
-  }
+    }
 
   &__list--color {
     margin-top: 44px;
@@ -125,7 +120,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 260px;
+    margin: 0 auto;
   }
+
+  &__wrapper-fb {
+    width: 260px;
+    margin: 0 auto;
+  }
+
 
   &__set {
     border: 0 none;
@@ -222,12 +225,12 @@
   &__surname,
   &__second-name {
     padding-left: 0;
+    width: 100%;
   }
 
   &__input {
     width: 100%;
     color: #d6d6d6;
-    padding-top: 10px;
     padding-bottom: 10px;
     border: none;
     border-bottom: 2px solid $black;
@@ -273,10 +276,6 @@
   .form {
     width: 768px;
 
-    &__wrapper {
-      width: 668px;
-    }
-
     &__title {
       padding-top: 104px;
       padding-bottom: 90px;
@@ -293,10 +292,6 @@
         background-image: url("../img/tablet/line-tablet.png");
         background-repeat: repeat-x;
       }
-    }
-
-    &__list {
-      margin: 0;
     }
 
     &__text {
@@ -330,6 +325,10 @@
       flex-wrap: wrap;
     }
 
+    &__list--type {
+      width: 65%;
+    }
+
     &__item {
       width: 50%;
     }
@@ -361,12 +360,45 @@
     &__wrapper {
       flex-direction: row;
       flex-wrap: no-wrap;
+      width: 768px;
     }
 
     &__wrapper--color{
-      background-color: $gray;
       padding-top: 66px;
       padding-bottom: 70px;
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 52px;
+      background-color: $gray;
+    }
+
+    &__wrapper--type{
+      width: 668px;
+      margin: 0 auto;
+    }
+
+    &__wrapper--name{
+      width: 768px;
+      margin: 0 auto;
+      margin-left: 52px;
+      margin-right: 50px;
+    }
+
+    &__wrapper--tel{
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 52px;
+    }
+
+    &__wrapper--mail{
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 52px;
+    }
+
+    &__wrapper--else{
+      width: 668px;
+      margin: 0 auto;
     }
 
     &__title {
@@ -375,6 +407,14 @@
       &::before {
         display: none;
       }
+    }
+
+    &__title--type {
+      width: 30%;
+    }
+
+    &__title--else {
+      margin-left: 52px;
     }
 
     &__set--name {
@@ -403,9 +443,24 @@
       width: 73%;
     }
 
+    &__group--tel,
+    &__group--mail,
+    &__group--else {
+      width: 64%;
+    }
+
+    &__input {
+      padding-bottom: 16px;
+      padding-left: 18px;
+      margin-left: 26px;
+      margin-right: 50px;
+    }
+
     &__input--tel,
     &__input--mail {
       background-color: $gray;
+      padding-bottom: 20px;
+      margin: 0;
     }
 
     &__wrapper--tel {
@@ -419,6 +474,10 @@
       padding-bottom: 50px;
     }
 
+    &__wrapper-fb {
+      width: 668px;
+    }
+
     &__set--else {
       margin-bottom: 53px;
     }
@@ -430,6 +489,12 @@
       padding-bottom: 106px;
       padding-right: 55px;
     }
+
+    &__name,
+    &__surname,
+    &__second-name {
+      display: flex;
+    }
   }
 }
 
@@ -437,16 +502,13 @@
   .form {
     width: 1250px;
 
-    &__wrapper {
-      width: 1050px;
-    }
-
     &__title {
       padding-top: 105px;
       padding-bottom: 111px;
       font-size: 53px;
       line-height: 57px;
       &::before {
+        bottom: -1px;
         height: 34px;
         background-image: url("../img/desktop/line-desktop.png");
       }
@@ -467,6 +529,10 @@
       width: 33%;
     }
 
+    &__item--acsesuars {
+      width: 70%;
+    }
+
     &__fb {
       width: 700px;
       margin-left: 113px;
@@ -482,13 +548,60 @@
       width: 10.5%;
     }
 
+    &__title--type,
+    &__title--name {
+      width: 13.5%;
+    }
+
+    &__wrapper {
+      width: 1250px;
+    }
+
+    &__wrapper--type {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
     &__wrapper--color {
       padding-bottom: 10px;
+      width: 1250px;
+      margin: 0 auto;
+      padding-left: 111px;
+    }
+
+    &__wrapper--name {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
+    &__wrapper--tel {
+      width: 1250px;
+      margin: 0 auto;
+      padding-left: 111px;
+    }
+
+    &__wrapper--mail {
+      width: 1250px;
+      margin: 0 auto;
+      padding-left: 111px;
+    }
+
+    &__wrapper--else {
+      width: 1050px;
+      margin: 0 auto;
     }
 
     &__textarea {
       width: 87%;
       padding-right: 12px;
+    }
+
+    &__input--tel {
+      margin-left: 82px;
+    }
+
+    &__input--mail {
+      margin-left: 55px;
     }
   }
 }
