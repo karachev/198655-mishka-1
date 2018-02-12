@@ -52,5 +52,5 @@ img {
 }
 
 .visually-hidden {
-  @extend $visuallyhidden;
+  // @extend $visuallyhidden; Неизвестное правило
 }

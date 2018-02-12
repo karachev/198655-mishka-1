@@ -6,7 +6,7 @@
   font-weight: 400;
   line-height: 30px;
   position: relative;
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -38,10 +38,6 @@
 
   &__field--mail {
     width: 66.6668%;
-  }
-
-  &__field--mail {
-    width: 66.6668%;
     border-bottom: 1px solid $lite-green;
 
     &:hover {
@@ -57,7 +53,7 @@
 
   &__table {
     padding: 0;
-    border-spacing: 0px 42px;
+    border-spacing: 0 42px;
   }
 
   &__map {
@@ -94,29 +90,29 @@
     background-image: url("../img/tablet/gray-line.png");
   }
 
-    &__wrapper {
-      width: 668px;
-    }
+  &__wrapper {
+    width: 668px;
+  }
 
-    &__title {
-      margin-top: 145px;
-      font-size: 43px;
-      line-height: 50px;
-    }
+  &__title {
+    margin-top: 145px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 
-    &__info {
-      width: 50%;
-    }
+  &__info {
+    width: 50%;
+  }
 
-    &__value {
-      width: 78px;
-    }
+  &__value {
+    width: 78px;
+  }
 
-    &__field--adress {
-      padding-right: 20px;
-    }
+  &__field--adress {
+    padding-right: 20px;
+  }
 
-    &__wrapper-btn {
+  &__wrapper-btn {
     width: 260px;
     margin: 56px auto;
   }
@@ -172,7 +168,6 @@
       padding-left: 175px;
     }
   }
-
 
   .contacts__table tbody {
     display: block;
