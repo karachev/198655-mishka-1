@@ -1,23 +1,32 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
+  line-height: 30px;
+  font-size: 17px;
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  &__br {
+    display: none;
+  }
 
   &__title {
     font-size: 25px;
     font-weight: 700;
-    line-height: 30px;
     margin: 0;
-    margin-top: 61px;
     margin-bottom: 38px;
   }
 
   &__text {
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
     color: $text-color;
     margin: 0;
     margin-bottom: 40px;
+    margin-right: 12px;
   }
 
   &__author-name {
@@ -35,11 +44,6 @@
     margin-bottom: 36px;
   }
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-  }
-
   &__item {
     margin: 0;
   }
@@ -51,11 +55,52 @@
 
   &__btn {
     width: 50%;
+    margin-bottom: 38px;
+    padding-top: 10px;
+    border: 1px solid $slider-color;
+    text-align: center;
   }
 
   &__write {
     width: 100%;
-    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 14px 0;
+    border: 2px solid $text-color;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  &__prev {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__next {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -64,17 +109,19 @@
     position: relative;
     width: 768px;
     background: url("../img/tablet/bg-reviews-tablet.jpg") no-repeat left;
+    background-position: top left;
 
     &__wrapper {
       width: 668px;
+      background-position: top left;
     }
 
     &__title {
       font-size: 43px;
       font-weight: 700;
       line-height: 50px;
+      padding: 0;
       padding-top: 86px;
-      padding-bottom: 65px;
       margin: 0;
     }
 
@@ -90,22 +137,36 @@
       line-height: 30px;
       font-weight: 400;
       margin: 0;
+      padding-right: 15px;
+      padding-top: 65px;
+      padding-bottom: 68px;
     }
 
     &__author {
       width: 50%;
-      margin-top: 68px;
-      margin-bottom: 53px;
     }
 
-    &__btns {
-      width: 50%;
-      margin-top: 78px;
+    &__author-nik {
+      margin-bottom: 0;
     }
 
     &__write {
       position: absolute;
-      top: 135px;
+      right: 0;
+      width: 200px;
+      top: 79px;
+    }
+
+    &__btn {
+      border: none;
+    }
+
+    &__btns {
+      margin-left: auto;
+    }
+
+    &__next {
+      padding-right: 37px;
     }
   }
 }
@@ -117,20 +178,32 @@
 
     &__wrapper {
       width: 1050px;
-      padding-top: 80px;
       background: url("../img/tablet/bg-reviews-tablet.jpg") no-repeat left;
+      background-position: top left;
+    }
+
+    &__br {
+      display: block;
+    }
+
+    &__write {
+      margin-right: 100px;
     }
 
     &__title {
       font-size: 53px;
       font-weight: 700;
       line-height: 57px;
-      padding-bottom: 65px;
+      margin-top: 80px;
+      margin-bottom: 64px;
       padding-left: 174px;
     }
 
     &__text {
       padding-left: 174px;
+      padding-right: 130px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &__author {

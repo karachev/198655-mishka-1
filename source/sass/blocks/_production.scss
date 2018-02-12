@@ -1,16 +1,74 @@
 .production {
+  margin-top: 50px;
+  margin-bottom: 58px;
+  margin-left: auto;
+  margin-right: auto;
+
   &__title {
     font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
   }
 
   &__lead {
     font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
     color: $text-color;
+    margin-top: 34px;
+    margin-bottom: 49px;
+    margin-left: 34px;
+    margin-right: 46px;
   }
 
   &__wrapper {
     width: 260px;
     margin: 0 auto;
+    border: 1px solid $slider-color;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 80px;
+    top: 37px;
+  }
+
+  &__player {
+    position: relative;
+    order: -1;
+  }
+
+  &__prev {
+    order: -2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    margin-top: 29px;
+    margin-bottom: 46px;
+    margin-left: 34px;
+    margin-right: 43px;
+  }
+
+  &__info {
+    order: 1;
+    margin-bottom: 49px;
+  }
+
+  &__button {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    border: 2px solid $text-color;
+    background-color: $white;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-left: 34px;
   }
 }
 
@@ -20,6 +78,44 @@
 
     &__wrapper {
       width: 668px;
+      border: none;
+    }
+
+    &__prev {
+      order: 2;
+      border: 1px solid $slider-color;
+      border-bottom: none;
+      margin: 0;
+    }
+
+    &__info {
+      order: 3;
+      border: 1px solid $slider-color;
+      border-top: none;
+      padding-bottom: 62px;
+    }
+
+    &__player {
+      order: 1;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__lead {
+      font-size: 15px;
+      line-height: 30px;
+      margin-top: 43px;
+      margin-bottom: 60px;
+      margin-left: 40px;
+      margin-right: 62px;
+    }
+
+    &__button {
+      padding-left: 222px;
+      padding-right: 222px;
+      margin-left: 42px;
     }
   }
 }
@@ -27,20 +123,46 @@
 @media (min-width: 1250px) {
   .production {
     width: 1250px;
+    margin-bottom: 105px;
 
     &__wrapper {
       width: 1050px;
       display: flex;
       flex-direction: row;
       flex-wrap: no-wrap;
+      border: 1px solid $slider-color;
+      position: relative;
     }
 
     &__player {
-      width: 50%;
+      width: 66.6668%;
     }
 
     &__info {
-      width: 50%;
+      width: 33.3334%;
+      border: none;
+    }
+
+    &__lead {
+      margin-top: 186px;
+      margin-bottom: 70px;
+      margin-left: 78px;
+      margin-right: 55px;
+    }
+
+    &__prev {
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__button {
+      padding-top: 19px;
+      padding-bottom: 17px;
+      padding-left: 44px;
+      padding-right: 46px;
+      margin-left: 78px;
     }
   }
 }

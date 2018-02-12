@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -9,41 +10,43 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item-logo">
-              <a href="./" class="logo">
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="logo">
               <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
               </a>
             </li>
-            <li class="main-nav__item main-nav__item-catalog">
+            <li class="main-nav__item main-nav__item--catalog">
               <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item-knit">
+            <li class="main-nav__item main-nav__item--knit">
               <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item-search">
-              <a href="catalog.html" class="main-nav__link">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <img src="http://placehold.it/150x100" alt="Поиск по сайту" height="18px" width="19px">
+              <a href="catalog.html" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item-basket">
+            <li class="main-nav__item main-nav__item--basket">
+              <img src="http://placehold.it/150x100" alt="Корзина" height="21px" width="18px">
               <a href="./" class="main-nav__link">Корзина:пока пуста</a>
             </li>
-            <li class="main-nav__item main-nav__item-free main-nav__item-none">
-              <a href="./" class="main-nav__link">Бесплатная доставка по россии</a>
+            <li class="main-nav__item main-nav__item--free main-nav__item--none">
+              <p class="main-nav__link main-nav__link--free">Бесплатная доставка по России</p>
             </li>
-            <li class="main-nav__item main-nav__item-none main-nav__item-new">
+            <li class="main-nav__item main-nav__item--none main-nav__item--new">
               <a href="./" class="main-nav__link">Новые поступления</a>
             </li>
-            <li class="main-nav__item main-nav__item-none main-nav__item-sale">
+            <li class="main-nav__item main-nav__item--none main-nav__item--sale">
               <a href="./" class="main-nav__link">Распродажа</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--catalog">
       <h1 class="page-main__title">Каталог товаров</h1>
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -59,7 +62,7 @@
               <div class="catalog-item__footer">
                 <span class="catalog-item__price">1 200 руб.</span>
                 <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
                 </a>
               </div>
             </div>
@@ -72,11 +75,11 @@
             </div>
             <div class="catalog-item__description">
               <a href="./" class="catalog-item__name">Корзинка для белья</a>
-              <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+              <p class="catalog-item__text catalog-item__text--big">Диаметр 15 см, высота 10 см</p>
               <div class="catalog-item__footer">
                 <span class="catalog-item__price">690 руб.</span>
                 <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
                 </a>
               </div>
             </div>
@@ -89,11 +92,11 @@
             </div>
             <div class="catalog-item__description">
               <a href="./" class="catalog-item__name">Боьшая корзинка для игрушек</a>
-              <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog-item__text catalog-item__text--bigbas">Диаметр 30 см, высота 30 см</p>
               <div class="catalog-item__footer">
                 <span class="catalog-item__price">1 500 руб.</span>
                 <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
                 </a>
               </div>
             </div>
@@ -104,10 +107,15 @@
         <div class="production__wrapper">
           <div class="production__player">
             <img src="img/mobile/video-catalog.jpg" class="production__video-icon">
-            <button class="video-player__btn">Кнопка видео</button>
+            <button class="production__btn">
+            <img src="http://placehold.it/150x100" width="101px" height="77px" alt="кнопка видео">
+            </button>
+          </div>
+          <div class="production__prev">
+            <img src="img/mobile/video-catalog.jpg" class="production__video-icon" width="32px" height="22px" alt="Значек камеры">
+            <h2 class="production__title">Процесс производства</h2>
           </div>
           <div class="production__info">
-            <h2 class="production__title">Процесс производства</h2>
             <p class="production__lead">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production__button button" href="./">сделать заказ</a>
           </div>
@@ -124,27 +132,43 @@
         <div class="page-footer__social social">
           <ul class="page-footer__list">
             <li class="social__item">
-              <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-              <img class="social__img social__img--inst" src="http://placehold.it/150x100" alt="Мы в Инстаграме" width="20px" height="20px">
+              <a class="social__link social__link--inst visually-hidden" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <img class="social__img social__img--inst" src="http://placehold.it/150x100" alt="Мы в Инстаграме" width="22px" height="21px">
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-              <img class="social__img social__img--facebook" src="http://placehold.it/150x100" alt="Мы в Фейсбуке" width="20px" height="20px">
+              <a class="social__link social__link--facebook visually-hidden" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <img class="social__img social__img--facebook" src="http://placehold.it/150x100" alt="Мы в Фейсбуке" width="15px" height="28px">
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
-              <img class="social__img social__img--twitter" src="http://placehold.it/150x100" alt="Мы в Твиттере" width="20px" height="20px">
+              <a class="social__link social__link--twitter visually-hidden" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+              <img class="social__img social__img--twitter" src="http://placehold.it/150x100" alt="Мы в Твиттере" width="23px" height="20px">
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="Html Academy" width="20px" height="20px">
+          <img src="http://placehold.it/150x100" alt="Html Academy" width="27px" height="34px">
           </a>
         </div>
       </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
