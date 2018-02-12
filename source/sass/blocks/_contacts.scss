@@ -6,6 +6,7 @@
   font-weight: 400;
   line-height: 30px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -85,37 +86,37 @@
     font-size: 17px;
 
     &::before {
-    top: -46px;
-    height: 17px;
-    background-image: url("../img/tablet/gray-line.png");
-  }
+      top: -46px;
+      height: 17px;
+      background-image: url("../img/tablet/gray-line.png");
+    }
 
-  &__wrapper {
-    width: 668px;
-  }
+    &__wrapper {
+      width: 668px;
+    }
 
-  &__title {
-    margin-top: 145px;
-    font-size: 43px;
-    line-height: 50px;
-  }
+    &__title {
+      margin-top: 145px;
+      font-size: 43px;
+      line-height: 50px;
+    }
 
-  &__info {
-    width: 50%;
-  }
+    &__info {
+      width: 50%;
+    }
 
-  &__value {
-    width: 78px;
-  }
+    &__value {
+      width: 78px;
+    }
 
-  &__field--adress {
-    padding-right: 20px;
-  }
+    &__field--adress {
+      padding-right: 20px;
+    }
 
-  &__wrapper-btn {
-    width: 260px;
-    margin: 56px auto;
-  }
+    &__wrapper-btn {
+      width: 260px;
+      margin: 56px auto;
+    }
   }
 
   .contacts__table tbody {
