@@ -26,8 +26,12 @@
   }
 
   &__desc {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 14px;
+    line-height: 16px;
     color: $text-color;
+    font-weight: 400;
   }
 
   &__list {
@@ -45,7 +49,7 @@
   &__list--type {
     margin-top: 43px;
     margin-bottom: 45px;
-    }
+  }
 
   &__list--color {
     margin-top: 44px;
@@ -66,20 +70,11 @@
     margin-bottom: 46px;
   }
 
-  &__desc {
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    color: $text-color;
-    font-weight: 400;
-  }
-
   &__button {
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
-    padding: 14px 0px;
+    padding-top: 0;
     padding-bottom: 15px;
     border: 2px solid #444444;
     cursor: pointer;
@@ -113,7 +108,9 @@
 
   &__group {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0;
   }
 
   &__wrapper {
@@ -153,7 +150,8 @@
 
   &__group--else {
     margin-top: 23px;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
+  }
   }
 
   &__radio {
@@ -161,26 +159,27 @@
     padding-left: 64px;
     position: relative;
     cursor: pointer;
-      &::before {
-        position: absolute;
-        content: "";
-        width: 34px;
-        height: 34px;
-        left: 0;
-        top: 0;
-        border: 2px solid $black;
-        border-radius: 50%;
-        background-image: url("../img/mobile/logo-mobile.png");
-        background-repeat: no-repeat;
-      }
 
-      &:hover::before {
-        border-color: #62d1ba;
-      }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 34px;
+      left: 0;
+      top: 0;
+      border: 2px solid $black;
+      border-radius: 50%;
+      background-image: url("../img/mobile/logo-mobile.png");
+      background-repeat: no-repeat;
+    }
 
-      &:active::before {
-        border-color: #c7c7c7;
-      }
+    &:hover::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: #c7c7c7;
+    }
   }
 
   &__checkbox {
@@ -210,13 +209,6 @@
     }
   }
 
-  &__group {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 18px;
-    padding: 0;
-  }
-
   &__item {
     margin-bottom: 25px;
   }
@@ -243,10 +235,6 @@
       border-color: #62d1ba;
       outline: 0;
     }
-  }
-
-  &__group--else {
-    margin-bottom: 25px;
   }
 
   &__textarea {
@@ -282,6 +270,7 @@
       font-size: 43px;
       line-height: 50px;
       position: relative;
+
       &::before {
         content: "";
         position: absolute;
@@ -305,7 +294,6 @@
     &__fb {
       display: flex;
       flex-wrap: no-wrap;
-      justify-content: center;
       align-items: flex-end;
       justify-content: space-between;
     }
@@ -339,7 +327,7 @@
     }
 
     &__item--black,
-    &__item--tiffani
+    &__item--tiffani,
     &__item--gray,
     &__item--white {
       margin-bottom: 56px;
@@ -363,7 +351,7 @@
       width: 768px;
     }
 
-    &__wrapper--color{
+    &__wrapper--color {
       padding-top: 66px;
       padding-bottom: 70px;
       width: 768px;
@@ -372,31 +360,19 @@
       background-color: $gray;
     }
 
-    &__wrapper--type{
+    &__wrapper--type {
       width: 668px;
       margin: 0 auto;
     }
 
-    &__wrapper--name{
+    &__wrapper--name {
       width: 768px;
       margin: 0 auto;
       margin-left: 52px;
       margin-right: 50px;
     }
 
-    &__wrapper--tel{
-      width: 768px;
-      margin: 0 auto;
-      padding-left: 52px;
-    }
-
-    &__wrapper--mail{
-      width: 768px;
-      margin: 0 auto;
-      padding-left: 52px;
-    }
-
-    &__wrapper--else{
+    &__wrapper--else {
       width: 668px;
       margin: 0 auto;
     }
@@ -467,11 +443,17 @@
       background-color: $gray;
       padding-bottom: 43px;
       padding-top: 69px;
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 52px;
     }
 
     &__wrapper--mail {
       background-color: $gray;
       padding-bottom: 50px;
+      width: 768px;
+      margin: 0 auto;
+      padding-left: 52px;
     }
 
     &__wrapper-fb {
@@ -507,6 +489,7 @@
       padding-bottom: 111px;
       font-size: 53px;
       line-height: 57px;
+
       &::before {
         bottom: -1px;
         height: 34px;

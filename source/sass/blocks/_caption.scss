@@ -49,6 +49,7 @@
 
   &--furniture {
     background: $lite-green;
+
     &:hover {
       background-color: #59d5bc;
     }
@@ -60,13 +61,15 @@
 
   &__text--furniture {
     color: $white;
+
     &:active {
-    opacity: 0.3;
+      opacity: 0.3;
     }
   }
 
   &--toy {
     background: $dark-green;
+
     &:hover {
       background-color: #46c1ae;
     }
@@ -79,6 +82,7 @@
   &__text--toy {
     padding-right: 115px;
     color: $white;
+
     &:active {
       opacity: 0.3;
     }
@@ -87,9 +91,7 @@
   &__line {
     display: none;
   }
-
 }
-
 
 @media (min-width: 768px) {
   .page-main {
@@ -101,6 +103,7 @@
     width: 768px;
     position: relative;
     z-index: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -154,8 +157,6 @@
     }
   }
 }
-
-
 
 @media (min-width: 1250px) {
   .page-main {

@@ -43,7 +43,6 @@
   &__price {
     font-size: 15px;
     font-weight: bold;
-    font-size: 15px;
   }
 
   &__footer {
@@ -52,7 +51,6 @@
 }
 
 .catalog {
-
   &__wrapper {
     width: 260px;
     margin: 0 auto;
@@ -100,7 +98,7 @@
         height: 24px;
         background-image: url("../img/tablet/line-tablet.png");
         background-repeat: repeat-x;
-    }
+      }
     }
   }
 
@@ -109,7 +107,7 @@
     &__wrapper {
       width: 668px;
     }
-}
+  }
 
   .catalog-item {
     display: flex;
@@ -169,7 +167,7 @@
       &::before {
         height: 34px;
         background-image: url("../img/desktop/line-desktop.png");
-    }
+      }
     }
   }
 
@@ -181,15 +179,12 @@
       flex-wrap: no-wrap;
       justify-content: space-between;
     }
-
-    &-item {
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 30%;
-    }
   }
 
   .catalog-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
     &__description {
       padding-top: 29px;
       padding-left: 28px;

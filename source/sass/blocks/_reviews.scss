@@ -67,7 +67,7 @@
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase;
-    padding: 14px 0px;
+    padding: 14px 0;
     border: 2px solid $text-color;
     cursor: pointer;
     text-align: center;
@@ -78,8 +78,9 @@
     padding: 0;
     border: none;
     background-color: white;
+
     &:hover {
-      opacity: 0.6;;
+      opacity: 0.6;
     }
 
     &:active {
@@ -92,15 +93,15 @@
     padding: 0;
     border: none;
     background-color: white;
+
     &:hover {
-      opacity: 0.6;;
+      opacity: 0.6;
     }
 
     &:active {
       opacity: 0.3;
     }
   }
-
 }
 
 @media (min-width: 768px) {

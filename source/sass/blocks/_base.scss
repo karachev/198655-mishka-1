@@ -38,10 +38,11 @@ img {
   text-decoration: none;
   background-color: #ffffff;
   text-transform: uppercase;
+
   &:hover {
-      color: $white;
-      background-color: $text-color;
-    }
+    color: $white;
+    background-color: $text-color;
+  }
 
   &:active {
     opacity: 0.3;
@@ -51,5 +52,5 @@ img {
 }
 
 .visually-hidden {
-  @extend %visuallyhidden;
+  @extend $visuallyhidden;
 }

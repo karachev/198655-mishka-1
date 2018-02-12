@@ -49,6 +49,7 @@
   &__item--knit {
     padding-top: 32px;
     padding-bottom: 33px;
+
     &:hover {
       opacity: 0.6;
     }
@@ -61,6 +62,7 @@
   &__item--catalog {
     padding-top: 32px;
     padding-bottom: 30px;
+
     &:hover {
       opacity: 0.6;
     }
@@ -73,6 +75,7 @@
   &__item--search {
     padding-top: 31px;
     padding-bottom: 30px;
+
     &:hover {
       opacity: 0.6;
     }
@@ -86,6 +89,7 @@
     padding-top: 32px;
     padding-bottom: 30px;
     border: none;
+
     &:hover {
       opacity: 0.6;
     }
@@ -97,46 +101,44 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 18px;
-      right: 0;
-      width: 20px;
-      height: 2px;
-      background-color: $black;
-      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    width: 21px;
+    height: 2px;
+    background-color: $black;
+  }
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 9px;
-      right: 0;
-      width: 21px;
-      height: 2px;
-      background-color: $black;
-    }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (max-width: 767px) {
   .main-nav {
-
     &__item--knit {
-    display: none;
+      display: none;
     }
 
     &__item--catalog {
@@ -286,7 +288,6 @@
 }
 
 @media (min-width: 1250px) {
-
   .page-main--index {
     margin-top: -64px;
   }
@@ -349,6 +350,7 @@
       display: block;
       text-align: start;
       padding-top: 25px;
+
       &:hover {
         opacity: 0.6;
       }
@@ -366,6 +368,7 @@
       padding-left: 35px;
       text-align: start;
       margin-right: auto;
+
       &:hover {
         opacity: 0.6;
       }
