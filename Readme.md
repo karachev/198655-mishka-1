@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Павел Карачев](https://up.htmlacademy.ru/adaptive/13/user/198655).
+* Студент: [Павел  Карачев](https://up.htmlacademy.ru/adaptive/13/user/198655).
 * Наставник: Отсутствует.
 
 ---
