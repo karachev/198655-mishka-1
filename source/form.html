@@ -16,7 +16,11 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
               <a href="index.html" class="logo">
-              <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+                <picture>
+                  <source media="(min-width: 1250px)" srcset="img/desktop/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+                  <img src="img/mobile/logo-mobile.svg" alt="mishka" height="35px" width="86px">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog">
@@ -153,7 +157,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="./" class="logo">
-          <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+          <img src="img/mobile/logo-footer.svg" alt="mishka" height="35px" width="86px">
           </a>
         </div>
         <div class="page-footer__social social">
@@ -175,7 +179,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="Html Academy" width="27px" height="34px">
+          <img src="img/mobile/logo-htmlacademy.svg" alt="Html Academy" width="27px" height="34px">
           </a>
         </div>
       </div>

@@ -115,7 +115,8 @@
     flex-wrap: no-wrap;
 
     &__img {
-      width: 50%;
+      width: 62%;
+      height: 334px;
     }
 
     &__description {
@@ -204,6 +205,11 @@
     &__footer {
       padding-top: 23px;
       padding-bottom: 32px;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
     }
   }
 }

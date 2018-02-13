@@ -16,7 +16,11 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
               <a href="index.html" class="logo">
-              <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+                <picture>
+                  <source media="(min-width: 1250px)" srcset="img/desktop/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+                  <img src="img/mobile/logo-mobile.svg" alt="mishka" height="35px" width="86px">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog">
@@ -53,7 +57,11 @@
           <div class="catalog-item">
             <div class="catalog-item__img">
               <a href="./" >
-              <img src="img/mobile/catalog-img-rabbit.jpg" width="260px" height="195px">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img-rabbit-desktop.jpg, img/desktop/catalog-img-rabbit-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img-rabbit-tablet.jpg, img/tablet/catalog-img-rabbit-tablet.jpg">
+                <img src="img/mobile/catalog-img-rabbit.jpg" srcset="img/mobile/catalog-img-rabbit.jpg" alt="зайчик-попрыгайчик">
+              </picture>
               </a>
             </div>
             <div class="catalog-item__description">
@@ -70,7 +78,11 @@
           <div class="catalog-item">
             <div class="catalog-item__img">
               <a href="./">
-              <img src="img/mobile/catalog-img-basket.jpg" width="260px" height="195">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img-basket-desktop.jpg, img/desktop/catalog-img-basket-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img-basket-tablet.jpg, img/tablet/catalog-img-basket-tablet2x.jpg">
+                <img src="img/mobile/catalog-img-basket.jpg" srcset="img/mobile/catalog-img-basket2x.jpg" alt="корзинка для белья">
+              </picture>
               </a>
             </div>
             <div class="catalog-item__description">
@@ -87,7 +99,11 @@
           <div class="catalog-item">
             <div class="catalog-item__img">
               <a href="#">
-              <img src="img/mobile/catalog-img--BigBasket.jpg" width="260px" height="195px" >
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img--BigBasket-desktop.jpg, img/desktop/catalog-img--BigBasket-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img--BigBasket-tablet.jpg, img/tablet/catalog-img--BigBasket-tablet2x.jpg">
+                <img src="img/mobile/catalog-img--BigBasket.jpg" srcset="img/mobile/catalog-img--BigBasket2x.jpg" alt="большая корзинка для белья">
+              </picture>
               </a>
             </div>
             <div class="catalog-item__description">
@@ -106,9 +122,12 @@
       <section class="production">
         <div class="production__wrapper">
           <div class="production__player">
-            <img src="img/mobile/video-catalog.jpg" class="production__video-icon">
+            <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/video-catalog-desktop.jpg, img/desktop/video-catalog-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/video-catalog-tablet.jpg, img/tablet/video-catalog-tablet2x.jpg">
+                <img src="img/mobile/video-catalog.jpg" srcset="img/mobile/video-catalog2x.jpg" alt="видео">
+              </picture>
             <button class="production__btn">
-            <img src="http://placehold.it/150x100" width="101px" height="77px" alt="кнопка видео">
             </button>
           </div>
           <div class="production__prev">
@@ -126,7 +145,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="./" class="logo">
-          <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+          <img src="img/mobile/logo-footer.svg" alt="mishka" height="35px" width="86px">
           </a>
         </div>
         <div class="page-footer__social social">
@@ -148,7 +167,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="Html Academy" width="27px" height="34px">
+          <img src="img/mobile/logo-htmlacademy.svg" alt="Html Academy" width="27px" height="34px">
           </a>
         </div>
       </div>
