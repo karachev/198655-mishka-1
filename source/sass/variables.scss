@@ -16,13 +16,3 @@ $sans: "OpenSans", "arial", sans-serif;
 //Размеры версий экрана
 $tablet-width: 768px;
 $desktop-width: 1250px;
-
-.visuallyhidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
-}
