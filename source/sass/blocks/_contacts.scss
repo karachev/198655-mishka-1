@@ -1,9 +1,186 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   color: $text-color;
   font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/mobile/gray-line.png");
+    background-repeat: repeat-x;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &__title {
     color: $black;
     font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 95px;
+  }
+
+  &__value {
+    width: 33.3334%;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  &__field--mail {
+    width: 66.6668%;
+    border-bottom: 1px solid $lite-green;
+
+    &:hover {
+      color: red;
+      border-bottom: 1px solid #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+      border-bottom: 1px solid #ecf9f7;
+    }
+  }
+
+  &__table {
+    padding: 0;
+    border-spacing: 0 42px;
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__send-us {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    border: 2px solid $text-color;
+    text-align: center;
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+  }
+
+  &__wrapper-btn {
+    width: 260px;
+    margin: 39px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 768px;
+    font-size: 17px;
+
+    &::before {
+      top: -46px;
+      height: 17px;
+      background-image: url("../img/tablet/gray-line.png");
+    }
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__title {
+      margin-top: 145px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__info {
+      width: 50%;
+    }
+
+    &__value {
+      width: 78px;
+    }
+
+    &__field--adress {
+      padding-right: 20px;
+    }
+
+    &__wrapper-btn {
+      width: 260px;
+      margin: 56px auto;
+    }
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts {
+    margin-bottom: 123px;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      top: -95px;
+      height: 23px;
+      background-image: url("../img/desktop/gray-line.png");
+    }
+
+    &__map {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+    }
+
+    &__wrapper {
+      width: 50%;
+      margin: 0;
+    }
+
+    &__title {
+      margin-top: 81px;
+      padding-left: 175px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__table {
+      padding-left: 134px;
+      border-spacing: 23px 25px;
+    }
+
+    &__wrapper-btn {
+      width: 525px;
+      margin: 0;
+      padding-left: 175px;
+    }
+
+    &__field--mail {
+      width: 20%;
+    }
+
+    &__value {
+      width: 25%;
+    }
+  }
+
+  .contacts__table tbody {
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -2,126 +2,192 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Проект "Мишка". Каталог</title>
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a href="index.html" class="logo">
-            <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="./" class="main-nav__link">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="./" class="main-nav__link">Новые поступления</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="./" class="main-nav__link">Распродажа</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="./" class="main-nav__link">Корзина</a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="logo">
+                <picture>
+                  <source media="(min-width: 1250px)" srcset="img/desktop/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+                  <img src="img/mobile/logo-mobile.svg" alt="mishka" height="35px" width="86px">
+                </picture>
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--catalog">
+              <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item main-nav__item--knit">
+              <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <img src="http://placehold.it/150x100" alt="Поиск по сайту" height="18px" width="19px">
+              <a href="catalog.html" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <img src="http://placehold.it/150x100" alt="Корзина" height="21px" width="18px">
+              <a href="./" class="main-nav__link">Корзина:пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--free main-nav__item--none">
+              <p class="main-nav__link main-nav__link--free">Бесплатная доставка по России</p>
+            </li>
+            <li class="main-nav__item main-nav__item--none main-nav__item--new">
+              <a href="./" class="main-nav__link">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--none main-nav__item--sale">
+              <a href="./" class="main-nav__link">Распродажа</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--catalog">
+      <h1 class="page-main__title">Каталог товаров</h1>
       <section class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
-          <div class="catalog-item__description">
-            <div class="catalog-item__header">
-            <a href="./" class="catalog-item__img">
-              <img src="img/mobile/catalog-img-rabbit.jpg" width="260px" height="195px">
-            </a>
+        <div class="catalog__wrapper">
+          <div class="catalog-item">
+            <div class="catalog-item__img">
+              <a href="./" >
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img-rabbit-desktop.jpg, img/desktop/catalog-img-rabbit-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img-rabbit-tablet.jpg, img/tablet/catalog-img-rabbit-tablet.jpg">
+                <img src="img/mobile/catalog-img-rabbit.jpg" srcset="img/mobile/catalog-img-rabbit.jpg" alt="зайчик-попрыгайчик">
+              </picture>
+              </a>
+            </div>
+            <div class="catalog-item__description">
               <a href="./" class="catalog-item__name">Зайчик-попрыгайчик</a>
               <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">1 200 руб.</span>
-              <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
-              </a>
+              <div class="catalog-item__footer">
+                <span class="catalog-item__price">1 200 руб.</span>
+                <a href="./" class="catalog-item__buy">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
+                </a>
+              </div>
             </div>
           </div>
-        <div class="catalog-item__description">
-            <div class="catalog-item__header">
-            <a href="./" class="catalog-item__img">
-              <img src="img/mobile/catalog-img-basket.jpg" width="260px" height="195">
-            </a>
+          <div class="catalog-item">
+            <div class="catalog-item__img">
+              <a href="./">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img-basket-desktop.jpg, img/desktop/catalog-img-basket-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img-basket-tablet.jpg, img/tablet/catalog-img-basket-tablet2x.jpg">
+                <img src="img/mobile/catalog-img-basket.jpg" srcset="img/mobile/catalog-img-basket2x.jpg" alt="корзинка для белья">
+              </picture>
+              </a>
+            </div>
+            <div class="catalog-item__description">
               <a href="./" class="catalog-item__name">Корзинка для белья</a>
-              <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">690 руб.</span>
-              <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
-              </a>
+              <p class="catalog-item__text catalog-item__text--big">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog-item__footer">
+                <span class="catalog-item__price">690 руб.</span>
+                <a href="./" class="catalog-item__buy">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
+                </a>
+              </div>
             </div>
           </div>
-          <div class="catalog-item__description">
-            <div class="catalog-item__header">
-            <a href="#" class="catalog-item__img">
-              <img src="img/mobile/catalog-img--BigBasket.jpg" width="260px" height="195px" >
-            </a>
+          <div class="catalog-item">
+            <div class="catalog-item__img">
+              <a href="#">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/catalog-img--BigBasket-desktop.jpg, img/desktop/catalog-img--BigBasket-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog-img--BigBasket-tablet.jpg, img/tablet/catalog-img--BigBasket-tablet2x.jpg">
+                <img src="img/mobile/catalog-img--BigBasket.jpg" srcset="img/mobile/catalog-img--BigBasket2x.jpg" alt="большая корзинка для белья">
+              </picture>
+              </a>
+            </div>
+            <div class="catalog-item__description">
               <a href="./" class="catalog-item__name">Боьшая корзинка для игрушек</a>
-              <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
-            </div>
-            <div class="catalog-item__footer">
-              <span class="catalog-item__price">1 500 руб.</span>
-              <a href="./" class="catalog-item__buy">
-                <img src="http://placehold.it/150x100">
-              </a>
+              <p class="catalog-item__text catalog-item__text--bigbas">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog-item__footer">
+                <span class="catalog-item__price">1 500 руб.</span>
+                <a href="./" class="catalog-item__buy">
+                <img src="http://placehold.it/150x100" width="20px" height="19px">
+                </a>
+              </div>
             </div>
           </div>
+        </div>
       </section>
       <section class="production">
-        <div class="production__header">
-          <img src="http://placehold.it/150x100">
-          <h2 class="production__title">Процесс производства</h2>
+        <div class="production__wrapper">
+          <div class="production__player">
+            <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/video-catalog-desktop.jpg, img/desktop/video-catalog-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/video-catalog-tablet.jpg, img/tablet/video-catalog-tablet2x.jpg">
+                <img src="img/mobile/video-catalog.jpg" srcset="img/mobile/video-catalog2x.jpg" alt="видео">
+              </picture>
+            <button class="production__btn">
+            </button>
+          </div>
+          <div class="production__prev">
+            <img src="img/mobile/video-catalog.jpg" class="production__video-icon" width="32px" height="22px" alt="Значек камеры">
+            <h2 class="production__title">Процесс производства</h2>
+          </div>
+          <div class="production__info">
+            <p class="production__lead">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production__button button" href="./">сделать заказ</a>
+          </div>
         </div>
-        <div class="video-player">
-          <img src="img/mobile/video-catalog.jpg" class="production-video-icon">
-          <button class="video-player__btn">Кнопка видео</button>
-        </div>
-        <p class="production__lead">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__button button" href="./">сделать заказ</a>
       </section>
-        </main>
-      <footer class="page-footer">
-      <div class="footer-wrapper">
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="./" class="logo">
+          <img src="img/mobile/logo-footer.svg" alt="mishka" height="35px" width="86px">
+          </a>
+        </div>
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="page-footer__list">
             <li class="social__item">
-              <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-              <img class="social__img social__img--inst" src="http://placehold.it/150x100" alt="Мы в Инстаграме">
+              <a class="social__link social__link--inst visually-hidden" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <img class="social__img social__img--inst" src="http://placehold.it/150x100" alt="Мы в Инстаграме" width="22px" height="21px">
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-              <img class="social__img social__img--facebook" src="http://placehold.it/150x100" alt="Мы в Фейсбуке">
+              <a class="social__link social__link--facebook visually-hidden" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <img class="social__img social__img--facebook" src="http://placehold.it/150x100" alt="Мы в Фейсбуке" width="15px" height="28px">
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
-              <img class="social__img social__img--twitter" src="http://placehold.it/150x100" alt="Мы в Твиттере">
+              <a class="social__link social__link--twitter visually-hidden" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+              <img class="social__img social__img--twitter" src="http://placehold.it/150x100" alt="Мы в Твиттере" width="23px" height="20px">
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="Html Academy">
+          <img src="img/mobile/logo-htmlacademy.svg" alt="Html Academy" width="27px" height="34px">
           </a>
         </div>
       </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,8 +1,195 @@
 .about {
+  font-weight: 700;
   font-size: 17px;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/mobile/gray-line.png");
+    background-repeat: repeat-x;
+  }
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &__title {
     font-size: 25px;
+    line-height: 30px;
+    margin-top: 76px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text--eco {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__text--style {
+    margin-top: 28px;
+    margin-bottom: 35px;
+  }
+
+  &__text--like {
+    margin-top: 23px;
+    margin-bottom: 32px;
+  }
+
+  &__text--handmade {
+    margin-top: 20px;
+    margin-bottom: 33px;
+  }
+
+  &__text--support {
+    margin-top: 30px;
+    margin-bottom: 31px;
+  }
+
+  &__text--pack {
+    margin-top: 22px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    width: 768px;
+    flex-direction: row;
+
+    &::before {
+      top: 72px;
+      height: 17px;
+      background-image: url("../img/tablet/gray-line.png");
+    }
+
+    &__wrapper {
+      width: 668px;
+    }
+
+    &__item {
+      width: 50%;
+      margin: 0;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &__title {
+      margin-top: 148px;
+      margin-bottom: 46px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__text--eco {
+      margin-bottom: 57px;
+      margin-right: 120px;
+    }
+
+    &__text--style {
+      margin-bottom: 62px;
+      margin-right: 90px;
+    }
+
+    &__text--like {
+      margin-bottom: 82px;
+      margin-right: 120px;
+    }
+
+    &__text--handmade {
+      margin-bottom: 60px;
+      margin-right: 90px;
+    }
+
+    &__text--support {
+      margin-bottom: 58px;
+    }
+
+    &__text--pack {
+      margin-top: 23px;
+      margin-bottom: 82px;
+      margin-right: 90px;
+    }
+
+    &__item--eco {
+      order: 1;
+    }
+
+    &__item--style {
+      order: 3;
+    }
+
+    &__item--like {
+      order: 5;
+    }
+
+    &__item--handmade {
+      order: 2;
+    }
+
+    &__item--support {
+      order: 4;
+    }
+
+    &__item--pack {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .about {
+    width: 1250px;
+
+    &::before {
+      top: 93px;
+      height: 23px;
+      background-image: url("../img/desktop/gray-line.png");
+    }
+
+    &__wrapper {
+      width: 700px;
+    }
+
+    &__title {
+      margin-top: 186px;
+    }
+
+    &__text--eco {
+      margin-right: 145px;
+    }
+
+    &__text--style {
+      margin-right: 120px;
+    }
+
+    &__text--like {
+      margin-right: 145px;
+    }
   }
 }
