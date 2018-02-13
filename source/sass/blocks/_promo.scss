@@ -92,7 +92,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      margin-top: 55px;
+      margin-top: 43px;
       margin-bottom: 55px;
     }
 
@@ -118,7 +118,7 @@
       margin: 0;
       position: absolute;
       right: 0;
-      top: 150px;
+      top: 156px;
     }
 
     &__title {
@@ -130,7 +130,7 @@
     &__text {
       font-size: 17px;
       line-height: 30px;
-      padding-right: 60px;
+      padding-right: 48px;
     }
 
     &__text--price {
@@ -159,6 +159,7 @@
       padding-left: 47px;
       width: 730px;
       flex-direction: column;
+      margin-top: 54px;
     }
 
     &__header {
@@ -182,15 +183,18 @@
     &__image {
       position: absolute;
       z-index: -1;
-      right: 0;
+      right: -135px;
+      top: 0;
+      width: 525px;
+      height: 636px;
     }
 
     &__text {
       padding-right: 70px;
     }
 
-    &_text--price {
-      margin-top: 110px;
+    &__text--price {
+      margin-top: 105px;
     }
   }
 }

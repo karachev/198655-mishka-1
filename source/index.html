@@ -16,7 +16,11 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
               <a class="logo">
-              <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/tablet/logo-tablet.svg">
+                <img src="img/mobile/logo-mobile.svg" alt="mishka" height="35px" width="86px">
+              </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item--catalog">
@@ -105,7 +109,11 @@
             </table>
           </div>
           <div class="promo__image">
-            <img src="img/mobile/promo-img-mobile.jpg" width="260px" height="315px">
+            <picture>
+                <source media="(min-width: 1250px)" srcset="img/desktop/promo-img-desktop.jpg, img/desktop/promo-img-desktop2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet/promo-img-tablet.jpg, img/tablet/promo-img-tablet2x.jpg">
+                <img src="img/mobile/promo-img-mobile.jpg" srcset="img/mobile/promo-img-mobile2x.jpg" alt="вязаные карзинки">
+              </picture>
           </div>
           <div class="promo__footer">
             <p class="promo__text--price">Цена: 990руб.</p>
@@ -118,37 +126,37 @@
           <h2 class="about__title">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item about__item--eco">
-              <img src="http://placehold.it/150x100" width="33px" height="38px">
+              <img src="img/mobile/icon-feature-flower.svg" width="33px" height="38px" alt="экологичные материалы">
               <div class="about__text--eco">
                 Экологически чистые материалы
               </div>
             </li>
             <li class="about__item about__item--style">
-              <img src="http://placehold.it/150x100" width="47px" height="27px">
+              <img src="img/mobile/icon-feature-money.svg" width="47px" height="27px" alt="скандинавский стиль">
               <div class="about__text--style">
                 Скандинавский стиль по российской цене
               </div>
             </li>
             <li class="about__item about__item--like">
-              <img src="http://placehold.it/150x100" width="34px" height="27px">
+              <img src="img/mobile/icon-feature-heart.svg" width="34px" height="27px" alt="увеличивает лайки">
               <div class="about__text--like">
                 Увеличивает лайки на фотографиях
               </div>
             </li>
             <li class="about__item about__item--handmade">
-              <img src="http://placehold.it/150x100" width="35px" height="34px">
+              <img src="img/mobile/icon-feature-ball.svg" width="35px" height="34px" alt="связано вручную">
               <div class="about__text--handmade">
                 Связано вручную с любовью и умилением
               </div>
             </li>
             <li class="about__item about__item--support">
-              <img src="http://placehold.it/150x100" width="33px" height="32px">
+              <img src="img/mobile/icon-feature-rocket.svg" width="33px" height="32px" alt="поддержка">
               <div class="about__text--support">
                 Поддержка отечественного производителя
               </div>
             </li>
             <li class="about__item about__item--pack">
-              <img src="http://placehold.it/150x100" width="32px" height="37px">
+              <img src="img/mobile/icon-feature-gift.svg" width="32px" height="37px" alt="подарочная упаковка">
               <div class="about__text--pack">
                 Поставляется в подарочной упаковке
               </div>
@@ -211,7 +219,11 @@
             </tr>
           </table>
         </div>
-        <img class="contacts__map" src="img/mobile/map-mobile.jpg" width="322px" height="427px" alt="Карта">
+        <picture>
+          <source media="(min-width: 1250px)" srcset="img/desktop/map-desktop.jpg, img/desktop/map-desktop2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/tablet/map-tablet.jpg, img/tablet/map-tablet2x.jpg">
+          <img class="contacts__map" src="img/mobile/map-mobile.jpg" srcset="img/mobile/map-mobile2x.jpg" width="322px" height="427px" alt="Карта">
+        </picture>
         <div class="contacts__wrapper-btn">
           <a class="contacts__send-us button" href="./">напишите нам</a>
         </div>
@@ -221,7 +233,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="./" class="logo">
-          <img src="img/mobile/logo-mobile.png" alt="mishka" height="35px" width="86px">
+          <img src="img/mobile/logo-footer.svg" alt="mishka" height="35px" width="86px">
           </a>
         </div>
         <div class="page-footer__social social">
@@ -243,7 +255,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="Html Academy" width="27px" height="34px">
+          <img src="img/mobile/logo-htmlacademy.svg" alt="Html Academy" width="27px" height="34px">
           </a>
         </div>
       </div>

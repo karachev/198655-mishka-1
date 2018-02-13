@@ -67,8 +67,8 @@
     line-height: 20px;
     border: 2px solid $text-color;
     text-align: center;
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-left: 49px;
+    padding-right: 49px;
     padding-top: 11px;
     padding-bottom: 11px;
     text-transform: uppercase;
@@ -127,15 +127,14 @@
 
 @media (min-width: 1250px) {
   .contacts {
-    min-height: 830px; //убрать min-heigh!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    margin-top: 50px;
+    margin-bottom: 123px;
     width: 1050px;
     display: flex;
     flex-direction: column;
     position: relative;
 
     &::before {
-      top: -71px;
+      top: -95px;
       height: 23px;
       background-image: url("../img/desktop/gray-line.png");
     }
@@ -160,7 +159,8 @@
     }
 
     &__table {
-      padding-left: 175px;
+      padding-left: 134px;
+      border-spacing: 23px 25px;
     }
 
     &__wrapper-btn {
@@ -168,9 +168,19 @@
       margin: 0;
       padding-left: 175px;
     }
+
+    &__field--mail {
+      width: 20%;
+    }
+
+    &__value {
+      width: 25%;
+    }
   }
 
   .contacts__table tbody {
     display: block;
+    margin: 0;
+    padding: 0;
   }
 }
