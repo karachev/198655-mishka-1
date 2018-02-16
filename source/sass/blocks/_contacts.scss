@@ -40,21 +40,29 @@
   &__field--mail {
     width: 66.6668%;
     border-bottom: 1px solid $lite-green;
+  }
+
+
+  &__mail {
 
     &:hover {
-      color: red;
-      border-bottom: 1px solid #46c1ae;
+      color: $lite-green;
     }
 
     &:active {
       opacity: 0.3;
-      border-bottom: 1px solid #ecf9f7;
+      border-color: red;
+//не меняется цвет рамки почему то
     }
   }
 
   &__table {
     padding: 0;
     border-spacing: 0 42px;
+  }
+
+  &__flag {
+    display: none;
   }
 
   &__map {
@@ -86,7 +94,7 @@
     font-size: 17px;
 
     &::before {
-      top: -46px;
+      top: 50px;
       height: 17px;
       background-image: url("../img/tablet/gray-line.png");
     }
@@ -99,10 +107,23 @@
       margin-top: 145px;
       font-size: 43px;
       line-height: 50px;
+      padding-left: 0;
+      order: -2;
+    }
+
+    &__flag {
+      order: -1;
+      margin-top: 134px;
+      display: block;
     }
 
     &__info {
       width: 50%;
+    }
+
+    &__wrap-title {
+      display: flex;
+      justify-content: space-between;
     }
 
     &__value {
@@ -153,9 +174,15 @@
 
     &__title {
       margin-top: 81px;
-      padding-left: 175px;
+      padding-right: 75px;
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &__flag {
+      order: -3;
+      margin-top: 57px;
+      padding-left: 63px;
     }
 
     &__table {

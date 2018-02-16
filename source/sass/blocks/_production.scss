@@ -32,8 +32,8 @@
 
   &__btn {
     position: absolute;
-    left: 80px;
-    top: 37px;
+    left: 45%;
+    top: 45%;
   }
 
   &__player {
@@ -70,6 +70,11 @@
     padding-right: 26px;
     margin-left: 34px;
   }
+
+  &__video-icon {
+    color: #63d1bb;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -85,7 +90,10 @@
       order: 2;
       border: 1px solid $slider-color;
       border-bottom: none;
+      border-top: none;
       margin: 0;
+      padding-top: 40px;
+      padding-left: 40px;
     }
 
     &__info {
@@ -153,6 +161,8 @@
     &__prev {
       border: none;
       position: absolute;
+      display: flex;
+      flex-wrap: wrap;
       right: 0;
       top: 0;
     }
@@ -163,6 +173,12 @@
       padding-left: 44px;
       padding-right: 46px;
       margin-left: 78px;
+    }
+
+    &__video-icon {
+      padding-right: 0;
+      width: 14%;
+      margin-bottom: 20px;
     }
   }
 }

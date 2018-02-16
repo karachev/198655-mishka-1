@@ -65,8 +65,21 @@
     }
   }
 
+  &__icon {
+    fill: #3bb09d;
+
+    &:hover {
+      fill: #29a592;
+    }
+
+    &:active {
+      fill: #44c0aa;
+    }
+  }
+
   &__text--furniture {
     color: $white;
+    padding-right: 115px;
 
     &:active {
       opacity: 0.3;
@@ -199,5 +212,10 @@
       padding-left: 273px;
       padding-right: 273px;
     }
+
+    &__text {
+      padding-right: 295px;
+    }
   }
 }
+

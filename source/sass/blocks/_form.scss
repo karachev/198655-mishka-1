@@ -257,6 +257,19 @@
   }
 }
 
+.icon-mail,
+.icon-phhone {
+  fill: #cccccc;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:focus {
+    fill: #62d1ba;
+  }
+}
+
 @media (min-width: 768px) {
   .form {
     width: 768px;
