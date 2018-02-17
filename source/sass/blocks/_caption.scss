@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  position: relative;
 
   &__title {
     background: url("../img/mobile/bg-cap.jpg");
@@ -63,10 +64,12 @@
     &:active {
       background-color: #59d5bc;
     }
-  }
 
+}
   &__icon {
     fill: #3bb09d;
+    position: absolute;
+    right: 20px;
 
     &:hover {
       fill: #29a592;
@@ -75,6 +78,14 @@
     &:active {
       fill: #44c0aa;
     }
+  }
+
+  &__icon--furniture {
+    bottom: 20px;
+  }
+
+  &__icon--toy {
+    bottom: 150px;
   }
 
   &__text--furniture {
@@ -178,6 +189,18 @@
     &--toy {
       width: 50%;
     }
+
+    &__icon {
+    bottom: 40px;
+  }
+
+  &__icon--furniture {
+    right: 400px;
+  }
+
+  &__icon--toy {
+    right: 80px;
+  }
   }
 }
 
@@ -216,5 +239,18 @@
     &__text {
       padding-right: 295px;
     }
+
+
+    &__icon {
+    bottom: 50px;
+  }
+
+  &__icon--furniture {
+    right: 800px;
+  }
+
+  &__icon--toy {
+    right: 110px;
+  }
   }
 }

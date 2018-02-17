@@ -34,16 +34,6 @@
   &__logo {
     display: none;
   }
-
-  &__logo-htmlacademy {
-    &:hover {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      fill: #bde3dd;
-    }
-  }
 }
 
 .social {
@@ -52,13 +42,17 @@
     margin-right: 40px;
   }
 
-  &__img {
+  &__link {
+    fill: $black;
+
     &:hover {
         fill: #46c1ae;
+        stroke: #46c1ae;
       }
 
       &:active {
         fill: #bde3dd;
+        stroke: #bde3dd;
       }
   }
 }
@@ -70,6 +64,20 @@
     &:active {
       color: #a8a8a8;
     }
+  }
+
+  &__link {
+    fill: $black;
+
+    &:hover {
+        fill: #46c1ae;
+        stroke: #46c1ae;
+      }
+
+      &:active {
+        fill: #bde3dd;
+        stroke: #bde3dd;
+      }
   }
 }
 

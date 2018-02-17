@@ -39,20 +39,19 @@
 
   &__field--mail {
     width: 66.6668%;
-    border-bottom: 1px solid $lite-green;
   }
 
 
   &__mail {
-
+      border-bottom: 1px solid $lite-green;
     &:hover {
       color: $lite-green;
+      border-color: #46c1ae;
     }
 
     &:active {
       opacity: 0.3;
-      border-color: red;
-//не меняется цвет рамки почему то
+      border-color: #c7ece7;
     }
   }
 
@@ -65,10 +64,6 @@
 
   &__flag {
     display: none;
-  }
-
-  &__map {
-    width: 100%;
   }
 
   &__send-us {
@@ -90,6 +85,27 @@
     margin-bottom:49px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__map {
+    position: relative;
+    width: 320px;
+    height: 457px;
+    margin-top: 23px;
+    background: url("../img/mobile/map-mobile.jpg");
+    background-size: 320px auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/mobile/icon-map-pin.svg");
+      width: 67px;
+      height: 100px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/mobile/map-mobile2x.jpg");
+    }
   }
 }
 
@@ -162,6 +178,19 @@
       padding-top: 10px;
       padding-buttom: 14px;
     }
+
+    &__map {
+      width: 768px;
+      height: 457px;
+      margin-top: 55px;
+      margin-left: 0;
+      background: url("../img/tablet/map-tablet.jpg");
+      background-size: 768px auto;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/tablet/map-tablet2x.jpg");
+    }
+    }
   }
 
   .contacts__table tbody {
@@ -189,6 +218,15 @@
       top: 0;
       right: 0;
       width: 50%;
+      width: 525px;
+      height: 457px;
+      top: 61px;
+      right: -7px;
+      background: url("../img/desktop/map-desktop.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/desktop/map-desktop2x.jpg");
+    }
     }
 
     &__wrapper {
