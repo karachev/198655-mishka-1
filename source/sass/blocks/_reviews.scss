@@ -130,7 +130,7 @@
       font-weight: 700;
       line-height: 50px;
       padding: 0;
-      padding-top: 86px;
+      padding-top: 79px;
       margin: 0;
     }
 
@@ -147,8 +147,8 @@
       font-weight: 400;
       margin: 0;
       padding-right: 15px;
-      padding-top: 65px;
-      padding-bottom: 68px;
+      padding-top: 49px;
+      padding-bottom: 58px;
     }
 
     &__author {
@@ -162,21 +162,34 @@
     &__write {
       position: absolute;
       right: 0;
-      width: 200px;
+      width: 271px;
       top: 79px;
+      margin-right: 48px;
+      padding-top: 13px;
     }
 
     &__btn {
       border: none;
+      margin-bottom: 55px;
+      padding-right: 13px;
+      padding-top: 15px;
     }
 
     &__btns {
-      margin-left: auto;
+      margin-left: 162px;;
     }
 
     &__next {
       padding-right: 37px;
     }
+  }
+
+  .icon__next {
+    margin-top: 2px;
+  }
+
+  .icon__prew {
+    margin-top: 2px;
   }
 }
 

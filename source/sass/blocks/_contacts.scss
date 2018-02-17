@@ -99,7 +99,7 @@
     font-size: 17px;
 
     &::before {
-      top: 50px;
+      top: 65px;
       height: 17px;
       background-image: url("../img/tablet/gray-line.png");
     }
@@ -109,7 +109,7 @@
     }
 
     &__title {
-      margin-top: 145px;
+      margin-top: 142px;
       font-size: 43px;
       line-height: 50px;
       padding-left: 0;
@@ -118,7 +118,7 @@
 
     &__flag {
       order: -1;
-      margin-top: 134px;
+      margin-top: 127px;
       display: block;
     }
 
@@ -140,8 +140,27 @@
     }
 
     &__wrapper-btn {
-      width: 260px;
-      margin: 56px auto;
+      width: 232px;
+      margin-top: 56px;
+      padding-left: auto;
+      padding-right: auto;
+      padding-buttom: 70px;
+    }
+
+    &__table {
+    border-spacing: 0 16px;
+    margin-bottom: 22px;
+    }
+
+    &__mail {
+      padding-right: 50px;
+    }
+
+    &__send-us {
+      padding-left: 40px;
+      padding-right: 31px;
+      padding-top: 10px;
+      padding-buttom: 14px;
     }
   }
 

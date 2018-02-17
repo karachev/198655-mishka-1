@@ -224,7 +224,7 @@
   }
 
   .page-main--index {
-    margin-top: -105px;
+    margin-top: -98px;
   }
 
   .main-nav {
@@ -246,7 +246,7 @@
     }
 
     &__item--logo {
-      width: 45%;
+      width: 42%;
       order: -2;
       text-align: start;
       padding-left: 48px;
@@ -257,21 +257,24 @@
 
     &__item--catalog {
       width: 22%;
+      font-size: 15px;
       order: 2;
       text-align: start;
-      padding-left: 50px;
-      padding-top: 25px;
+      padding-left: 48px;
+      padding-top: 17px;
     }
 
     &__item--knit {
       width: 35%;
+      font-size: 15px;
       order: 3;
       text-align: start;
-      padding-top: 25px;
+      padding-top: 18px;
+      padding-left: 7px;
     }
 
     &__item--search {
-      width: 12%;
+      width: 10.5%;
       order: -1;
       padding-top: 36px;
       text-align: center;
@@ -302,8 +305,8 @@
       order: 4;
       display: block;
       text-align: start;
-      padding-top: 25px;
-      padding-left: 31px;
+      padding-top: 16px;
+      padding-left: 3px;
 
       &:active {
         opacity: 0.3;

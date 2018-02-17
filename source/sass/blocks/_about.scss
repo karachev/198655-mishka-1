@@ -70,23 +70,23 @@
     margin-top: 19px;
     margin-bottom: 55px;
   }
+}
 
-  &__item--eco {
+.about__item--eco {
     margin-left: 8px;
   }
 
-  &__item--like {
+.about__item--like {
     margin-left: 7px;
   }
 
-  &__item--handmade {
+.about__item--handmade {
     margin-left: 3px;
   }
 
-  &__item--pack {
+.about__item--pack {
     margin-left: 2px;
   }
-}
 
 @media (min-width: 768px) {
   .about {
@@ -94,7 +94,7 @@
     flex-direction: row;
 
     &::before {
-      top: 72px;
+      top: 64px;
       height: 17px;
       background-image: url("../img/tablet/gray-line.png");
     }
@@ -111,8 +111,8 @@
     }
 
     &__title {
-      margin-top: 148px;
-      margin-bottom: 46px;
+      margin-top: 130px;
+      margin-bottom: 49px;
       font-size: 43px;
       line-height: 50px;
     }
@@ -125,31 +125,42 @@
     &__text--eco {
       margin-bottom: 57px;
       margin-right: 120px;
+      margin-top: 16px;
+      margin-left: 2px;
     }
 
     &__text--style {
       margin-bottom: 62px;
       margin-right: 90px;
+      margin-top: 22px;
+      margin-left: 2px;
     }
 
     &__text--like {
       margin-bottom: 82px;
       margin-right: 120px;
+      margin-top: 21px;
+      margin-left: 2px;
     }
 
     &__text--handmade {
-      margin-bottom: 60px;
-      margin-right: 90px;
+      margin-bottom: 62px;
+      margin-right: 81px;
+      margin-top: 19px;
+      margin-left: 2px;
     }
 
     &__text--support {
       margin-bottom: 58px;
+      margin-top: 26px;
+      margin-left: 2px;
     }
 
     &__text--pack {
-      margin-top: 23px;
+      margin-top: 16px;
       margin-bottom: 82px;
       margin-right: 90px;
+      margin-left: 2px;
     }
 
     &__item--eco {
@@ -175,6 +186,26 @@
     &__item--pack {
       order: 6;
     }
+  }
+
+  .about-icon--eco {
+    margin-left: 11px;
+  }
+
+  .about-icon--handmade {
+    margin-left: 5px;
+  }
+
+  .about-icon--style {
+    margin-left: 5px;
+  }
+
+  .about-icon--like {
+    margin-left: 11px;
+  }
+
+  .about-icon--pack {
+    margin-left: 6px;
   }
 }
 
