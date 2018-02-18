@@ -180,10 +180,10 @@
     }
 
     &__title--text {
-      margin-top: 150px;
+      margin-top: 156px;
       font-size: 43px;
       line-height: 50px;
-      padding-left: 100px;
+      padding-left: 107px;
       padding-right: 100px;
     }
 
@@ -194,8 +194,8 @@
 
     &__item {
       flex-grow: 2;
-      padding-top: 35px;
-      padding-bottom: 34px;
+      padding-top: 27px;
+      padding-bottom: 42px;
       padding-left: 36px;
       font-size: 20px;
       line-height: 30px;
@@ -214,11 +214,12 @@
   }
 
   &__icon--furniture {
-    right: 400px;
+    right: 420px;
+    bottom: 38px;
   }
 
   &__icon--toy {
-    right: 80px;
+    right: 84px;
   }
   }
 }

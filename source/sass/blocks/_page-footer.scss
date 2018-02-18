@@ -93,6 +93,13 @@
 
 
 @media (min-width: 768px) {
+  .copyright {
+    &__link {
+        top: 7px;
+        right: -32px;
+      }
+  }
+
   .page-footer {
     width: 768px;
 
@@ -119,7 +126,7 @@
     }
 
     &__copyright {
-      padding-top: 0;
+      padding-top: 12px;
     }
 
     &__icon-logo {

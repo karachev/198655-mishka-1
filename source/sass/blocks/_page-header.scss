@@ -251,6 +251,10 @@
       border: none;
     }
 
+    &__link--basket {
+      padding-left: 27px;
+    }
+
     &__list {
       background-color: transparent;
       flex-direction: row;
@@ -281,8 +285,7 @@
       font-size: 15px;
       order: 3;
       text-align: start;
-      padding-top: 18px;
-      padding-left: 7px;
+      padding-top: 17px;
     }
 
     &__item--search {
@@ -299,7 +302,7 @@
       width: 32%;
       order: 1;
       text-align: start;
-      padding-top: 35px;
+      padding-top: 36px;
       padding-left: 31px;
       border-bottom: 1px solid $slider-color;
     }
@@ -319,7 +322,7 @@
       display: block;
       text-align: start;
       padding-top: 16px;
-      padding-left: 3px;
+      padding-left: 1px;
       cursor: default;
     }
 
