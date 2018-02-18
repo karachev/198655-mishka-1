@@ -224,14 +224,14 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .page-main {
     width: 0;
   }
 
   .caption {
     background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
-    width: 1250px;
+    width: 1150px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/desktop/cap-desktop2x.jpg");
