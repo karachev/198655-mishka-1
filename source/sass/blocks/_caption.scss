@@ -240,6 +240,8 @@
 
     &::before {
       height: 34px;
+      left: 13px;
+      bottom: -7px;
       background-image: url("../img/desktop/line-desktop.png");
     }
 
@@ -248,29 +250,40 @@
     }
 
     &__title--text {
-      margin-top: 168px;
+      margin-top: 154px;
       margin-bottom: 360px;
-      font-size: 43px;
-      line-height: 50px;
-      padding-left: 273px;
-      padding-right: 273px;
+      font-size: 53px;
+      line-height: 57px;
+      padding-left: 267px;
+      padding-right: 264px;
     }
 
     &__text {
       padding-right: 295px;
     }
 
+    &--furniture {
+      width: 19%;
+      padding-right: 288px;
+    }
+
+    &--toy {
+      width: 16%;
+      padding-right: 322px;
+    }
 
     &__icon {
-    bottom: 50px;
-  }
+      bottom: 50px;
+    }
 
-  &__icon--furniture {
-    right: 800px;
-  }
+    &__icon--furniture {
+      right: 611px;
+      bottom: 37px;
+    }
 
-  &__icon--toy {
-    right: 110px;
-  }
+    &__icon--toy {
+      right: 85px;
+      bottom: 37px;
+    }
   }
 }
