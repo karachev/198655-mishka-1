@@ -24,7 +24,7 @@
   }
 
   &__title--text {
-    margin-top: 170px;
+    margin-top: 70px;
     margin-bottom: 122px;
     padding-left: 30px;
     padding-right: 30px;
@@ -48,53 +48,64 @@
 
   &__item {
     padding-top: 25px;
-    padding-bottom: 44px;
+    padding-bottom: 29px;
     padding-left: 29px;
+    padding-right: 123px;
     margin: 0;
     text-align: start;
-  }
+
+    &:hover {
+      margin-top: -5px;
+      padding-top: 5px;
+      padding-bottom: 37px;
+    }
+}
 
   &--furniture {
     background: $lite-green;
 
     &:hover {
       background-color: #59d5bc;
+
+      .caption__text--furniture {
+
+      }
+
+      .caption__icon--furniture {
+        fill: #29a592;
+      }
     }
 
     &:active {
       background-color: #59d5bc;
-    }
 
+      .caption__text--furniture {
+        color: #8be2d0;
+      }
+
+      .caption__icon--furniture {
+        fill: #44c0aa;
+      }
+    }
 }
   &__icon {
     fill: #3bb09d;
     position: absolute;
-    right: 20px;
-
-    &:hover {
-      fill: #29a592;
-    }
-
-    &:active {
-      fill: #44c0aa;
-    }
   }
 
   &__icon--furniture {
-    bottom: 20px;
+    bottom: 119px;
+    right: 37px;
   }
 
   &__icon--toy {
-    bottom: 150px;
+    bottom: 20px;
+    right: 27px;
   }
 
   &__text--furniture {
     color: $white;
     padding-right: 115px;
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   &--toy {
@@ -102,20 +113,28 @@
 
     &:hover {
       background-color: #46c1ae;
+
+      .caption__icon--toy {
+        fill: #239f8e;
+      }
     }
 
     &:active {
       background-color: #46c1ae;
+
+      .caption__text--toy {
+        color: #8be2d0;
+      }
+
+      .caption__icon--toy {
+        fill: #37b2a0;
+      }
     }
-  }
+}
 
   &__text--toy {
     padding-right: 115px;
     color: $white;
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   &__line {
@@ -134,7 +153,7 @@
     position: relative;
     z-index: 1;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/tablet/cap-tablet2x.jpg");
       background-size: 100%;
     }
@@ -213,7 +232,7 @@
     background: url("../img/desktop/cap-desktop.jpg") no-repeat center;
     width: 1250px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/desktop/cap-desktop2x.jpg");
       background-size: 100%;
     }

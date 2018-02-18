@@ -72,7 +72,25 @@
     border: 2px solid $text-color;
     cursor: pointer;
     text-align: center;
+
+    &:hover {
+      background-color: #444444;
+      .button {
+        color: $white;
+        background-color: #444444;
+      }
+    }
+
+    &:active {
+      background-color: #444444;
+        .button {
+          color: #797979;
+          background-color: #444444;
+        }
+    }
   }
+
+
 
   &__prev {
     margin: 0;
@@ -106,10 +124,12 @@
 
   .icon__next {
     margin-bottom: 2px;
+    cursor: pointer;
   }
 
-  .icon__prew {
+  .icon__prev {
     margin-right: 3px;
+    cursor: pointer;
   }
 }
 
@@ -172,7 +192,6 @@
       border: none;
       margin-bottom: 55px;
       padding-right: 13px;
-      padding-top: 15px;
     }
 
     &__btns {
@@ -204,7 +223,7 @@
       background-position: top left;
       background-size: 350px auto;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/desktop/bg-reviews-desktop2x.jpg");
         background-size: 350px auto;
       }
