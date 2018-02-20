@@ -218,7 +218,7 @@
     width: 1150px;
 
     &::before {
-      top: 93px;
+      top: 86px;
       height: 23px;
       background-image: url("../img/desktop/gray-line.png");
     }
@@ -228,19 +228,55 @@
     }
 
     &__title {
-      margin-top: 186px;
+      margin-top: 172px;
+      font-size: 50px;
     }
 
     &__text--eco {
-      margin-right: 145px;
+      margin-right: 142px;
+      margin-top: 20px;
     }
 
     &__text--style {
-      margin-right: 120px;
+      margin-right: 109px;
+      margin-left: 4px;
+      margin-top: 22px;
     }
 
     &__text--like {
-      margin-right: 145px;
+      margin-right: 117px;
     }
+
+    &__text--handmade {
+      margin-top: 22px;
+      margin-left: 4px;
+    }
+
+    &__text--pack {
+      margin-top: 17px;
+      margin-left: 3px;
+    }
+  }
+
+  .about-icon--eco {
+    margin-left: 13px;
+    margin-top: 3px;
+  }
+
+  .about-icon--style {
+    margin-left: 5px;
+  }
+
+  .about-icon--like {
+    margin-left: 12px;
+  }
+
+  .about-icon--handmade {
+    margin-left: 8px;
+    margin-top: 6px;
+  }
+
+  .about-icon--pack {
+    margin-left: 7px;
   }
 }
